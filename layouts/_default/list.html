@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    {{ partial "stylesheets" . }}
+</head>
+
+<body>
+    {{ partial "masthead.html" . }}
+    {{ partial "hero.html" . }}
+    {{ partial "content.html" . }}
+
+    <div class="container post-list">
+        {{ range .Pages.ByDate.Reverse }}
+        <a class="post-list-item" href="{{ .Permalink }}">
+            <h2>{{ .Title }}
+                {{ if .Param "topic" }}
+                <span class="subtitle-topic">| {{ .Param "topic" }}</span>
+                {{ end }}
+            </h2>
+            <span class="subtitle-date">{{ .Date.Format "Monday, Jan 2, 2006" }}</span>
+            <p>{{ .Summary }}</p>
+        </a>
+        {{ end }}
+    </div>
+
+    {{ partial "footer.html" . }}
+</body>
+
+</html>

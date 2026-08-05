@@ -1,0 +1,36 @@
+{{ $p := .RelPermalink }}
+<nav class="navbar" aria-label="Primary">
+    <a href="/" {{ if eq $p "/" }}class="current" {{ end }}>Home</a>
+    <a href="/2026-event-schedule/">Schedule</a>
+    <a href="/2026-speakers/">Speakers</a>
+    <div class="navbar-dropdown">
+        <a href="/pipeline-awards/">Pipeline Awards ▾</a>
+        <div class="navbar-dropdown-menu">
+            <a href="/pipeline-awards/">About</a>
+            <a href="/pipeline-awards-past-winners/">Past Winners</a>
+        </div>
+    </div>
+    <a href="/2026-sponsors/">Sponsors</a>
+    <a href="/blog/">Blog</a>
+    <div class="navbar-dropdown">
+        <a href="/2026-the-team/">About ▾</a>
+        <div class="navbar-dropdown-menu">
+            <a href="/code-of-conduct/">Code of Conduct</a>
+            <a href="/2026-the-team/">The Team</a>
+        </div>
+    </div>
+    <div class="navbar-dropdown">
+        <a href="/past-events/">Past Events ▾</a>
+        <div class="navbar-dropdown-menu">
+            <a href="https://www.youtube.com/@ThePipelineConference/videos" target="_blank" rel="noopener noreferrer">Past Event Videos</a>
+            <a href="/2025-event-schedule/">TPC 2025</a>
+            <a href="/2024-event-schedule/">TPC 2024</a>
+            <a href="/event-schedule-2022/">TPC 2022</a>
+            <a href="/event-schedule-2021/">TPC 2021</a>
+            <a href="/event-schedule-2020/">TPC 2020</a>
+            <a href="/event-schedule-2019/">TPC 2019</a>
+        </div>
+    </div>
+    <a href="https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv" target="_blank" rel="noopener noreferrer">Subscribe</a>
+    <a href="/register/" class="btn navbar-cta">Register</a>
+</nav>

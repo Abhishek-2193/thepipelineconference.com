@@ -1,0 +1,19 @@
+{{/* Hero / page banner. Home gets the big background banner; other pages get a compact page-header. */}}
+{{ $isHome := .IsHome }}
+{{ $img := resources.Get "images/banner-img.jpg" }}
+<div class="site-banner {{ if $isHome }}site-banner--home{{ else }}site-banner--page{{ end }}" style="background-image:url('{{ $img.RelPermalink }}')">
+    <div class="banner-caption">
+        <div class="container">
+            {{ if $isHome }}
+            <h1 class="banner-title">{{ .Site.Title }}</h1>
+            <p class="banner-desc">To Promote, Elevate, and Evolve VFX/CG Pipelines</p>
+            <div class="banner-btn-wrap">
+                <a class="btn btn-transparent" href="https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv" target="_blank" rel="noopener noreferrer">Join our newsletter to receive updates!</a>
+            </div>
+            {{ else }}
+            <h1 class="banner-title">{{ .Title }}</h1>
+            <p class="banner-breadcrumb"><a href="/">Home</a> &rarr; {{ .Title }}</p>
+            {{ end }}
+        </div>
+    </div>
+</div>

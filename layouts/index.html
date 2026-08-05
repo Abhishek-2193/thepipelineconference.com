@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>{{ .Site.Title }}</title>
+    {{ partial "stylesheets" . }}
+</head>
+
+<body>
+    {{ partial "newsletter-success-banner.html" . }}
+    {{ partial "masthead.html" . }}
+    {{ partial "hero.html" . }}
+    {{ partial "content.html" . }}
+    {{ partial "footer.html" . }}
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+baseURL = "https://pipedev-org.github.io/thepipelineconference.com/"
+languageCode = "en-us"
+summaryLength = 25
+title = "The Pipeline Conference"
+canonifyURLs = true
+
+[permalinks]
+[permalinks.page]
+posts = "/:year/:month/:day/:slug/"
+[permalinks.section]
+posts = "/blog/"
+
+[markup]
+[markup.highlight]
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = "github"
+tabWidth = 4
+[markup.goldmark.renderer]
+# ensure our embedded url gets properly propagated
+unsafe = true
+
+[caches]
+[caches.images]
+dir = ':cacheDir/images'
+
+[module]
+[[module.mounts]]
+source = 'assets'
+target = 'assets'
+[[module.mounts]]
+source = 'static'
+target = 'assets'

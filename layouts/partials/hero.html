@@ -5,10 +5,19 @@
     <div class="banner-caption">
         <div class="container">
             {{ if $isHome }}
-            <h1 class="banner-title">{{ .Site.Title }}</h1>
-            <p class="banner-desc">To Promote, Elevate, and Evolve VFX/CG Pipelines</p>
-            <div class="banner-btn-wrap">
-                <a class="btn btn-transparent" href="https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv" target="_blank" rel="noopener noreferrer">Join our newsletter to receive updates!</a>
+            <div class="banner-lockup">
+                <h1 class="banner-title">{{ .Site.Title }}</h1>
+                <p class="banner-desc">To Promote, Elevate, and Evolve VFX/CG Pipelines</p>
+                {{ if or .Params.event_location .Params.event_date }}
+                <p class="banner-meta">
+                    {{ with .Params.event_location }}<span class="banner-location">{{ . }}</span>{{ end }}
+                    {{ with .Params.event_date }}<span class="banner-date">{{ . }}</span>{{ end }}
+                </p>
+                {{ end }}
+                {{ with .Params.banner_blurb }}<p class="banner-blurb">{{ . }}</p>{{ end }}
+                <div class="banner-btn-wrap">
+                    <a class="btn btn-transparent" href="https://luma.com/eo1ko3xy" target="_blank" rel="noopener noreferrer">Register Now!</a>
+                </div>
             </div>
             {{ else }}
             <h1 class="banner-title">{{ .Title }}</h1>

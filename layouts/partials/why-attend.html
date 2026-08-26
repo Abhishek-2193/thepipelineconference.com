@@ -1,0 +1,30 @@
+{{/* Three "why attend" cards in a row. Content comes from why_attend in the page front matter. */}}
+{{ with .Params.why_attend }}
+<section class="why-attend" aria-label="Why attend TPC 2026">
+    <div class="container">
+        {{ with .heading }}<h2 class="why-attend-heading">{{ . }}</h2>{{ end }}
+        <div class="why-attend-grid">
+            {{ range $reason := .reasons }}
+            {{/* static/ is mounted into assets, so uploads resolve through resources.Get like the banner does. */}}
+            {{ $src := $reason.image | relURL }}
+            {{ with resources.Get (strings.TrimPrefix "/" $reason.image) }}
+            {{ $src = .RelPermalink }}
+            {{ end }}
+            <article class="why-card">
+                <div class="why-card-media why-card-media--{{ default "cover" $reason.fit }}">
+                    <img src="{{ $src }}" alt="{{ $reason.alt }}" loading="lazy" />
+                </div>
+                <div class="why-card-text">
+                    <h3 class="why-card-title">{{ $reason.title }}</h3>
+                    <p class="why-card-body">{{ $reason.body }}</p>
+                    {{ with $reason.link_url }}
+                    {{ $external := hasPrefix . "http" }}
+                    <a class="why-card-link" href="{{ if $external }}{{ . }}{{ else }}{{ . | relURL }}{{ end }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $reason.link_text }}</a>
+                    {{ end }}
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

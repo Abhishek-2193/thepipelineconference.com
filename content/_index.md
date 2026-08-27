@@ -2,8 +2,11 @@
 title: "Home"
 date: 2019-02-20T16:11:19
 author: "Fran"
-event_location: "Vancouver, British Columbia"
+event_location: "British Columbia Institute of Technology"
+event_location_url: "https://www.google.com/maps/search/?api=1&query=BCIT%20Downtown%20Campus&query_place_id=ChIJ4S7wxnhxhlQRFGfmMvQ74LQ"
+event_address: "555 Seymour St, Vancouver, BC"
 event_date: "Thursday 17 September 2026"
+event_time: "9:00 AM"
 banner_blurb: "One day for pipeline engineering professionals across animation, VFX, games and real-time media to exchange problems, solutions and hard-won insights — with a keynote, talks, the Pipeline Awards and a reception."
 why_attend:
   reasons:

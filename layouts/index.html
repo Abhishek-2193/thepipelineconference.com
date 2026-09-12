@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>{{ .Site.Title }}</title>
+    {{ with .Params.banner_blurb }}<meta name="description" content="{{ . }}" />{{ end }}
     {{ partial "stylesheets" . }}
 </head>
 
@@ -11,6 +12,8 @@
     {{ partial "newsletter-success-banner.html" . }}
     {{ partial "masthead.html" . }}
     {{ partial "hero.html" . }}
+    {{ partial "status-notice.html" . }}
+    {{ partial "events-2026.html" . }}
     {{ partial "content.html" . }}
     {{ partial "why-attend.html" . }}
     {{ partial "footer.html" . }}

@@ -10,17 +10,17 @@ Fran Zandonella Benjamin
 Founder  
 The Pipeline Conference
 
-![](/uploads/2026/03/Liviu_Constantinescu-300x240.jpg)
-
-Liviu Constantinescu  
-Chair  
-The Pipeline Conference 2026
-
 ![](/uploads/2021/06/Ryan-Bottriell-300x300.jpg)
 
 Ryan Bottriel  
 President  
 Digital Production Pipeline Association
+
+![](/uploads/2026/03/Liviu_Constantinescu-300x240.jpg)
+
+Liviu Constantinescu  
+Vice President, Digital Production Pipeline Association  
+2026 Conference Chair, The Pipeline Conference
 
 ![](/uploads/2022/07/dennis_hebbard-300x300.png)
 

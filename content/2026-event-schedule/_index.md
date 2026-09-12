@@ -4,22 +4,57 @@ date: 2026-03-18T16:11:40
 author: "Fran"
 ---
 
-This year, TPC is presenting quarterly on topics relevant to Pipeline professionals. These events are virtual, with an in-person BoF and reception taking place at SIGGRAPH 2026 in Los Angeles, CA, USA.  
-Events will be recorded if permission given, and can be found on [The Pipeline Conference youtube channel.](https://www.youtube.com/@ThePipelineConference)
+TPC 2026 is running online. Our in-person conference in Vancouver was cancelled; the programme built for it is being delivered as two free half-day events from October, followed by the tenth Pipeline Awards in December.
+
+Sessions are recorded where permission is given and published on [The Pipeline Conference YouTube channel](https://www.youtube.com/@ThePipelineConference).
+
+## The 2026 online programme
+
+### The Agentic Pipeline — half day one
+
+**October 2026 · date to be announced**  
+**Online · Free to attend · Speakers to be announced**
+
+AI and agentic workflows in digital media pipelines: agentic workflows for asset production, the data layers and security model underneath, DevOps and FinOps for AI services, and honest accounts of what broke along the way.
+
+### Operational Best Practices — half day two
+
+**Date to be announced**  
+**Online · Free to attend · Speakers to be announced**
+
+Pipeline engineering and operations at production scale: render farms, storage, OpenUSD in anger, cloud adoption, long migrations, and keeping the whole thing standing while a show is in flight. A day of classic Pipeline Conference content on practical topics that matter, kept apart from the chaos and bustle of new workflows introduced by AI.
+
+### DPPA Online Speaker Series — Alex Hughes
+
+**Tuesday, October 20, 2026 · 2:00 PM Pacific Time**  
+**Online · Free to attend**
+
+**[Large Scale Cloud Native Radiance Field Training for Streamable Assets](https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite)**  
+with **Alex Hughes**, Senior Software Engineer at [Miris](https://www.miris.com/), Vancouver, BC.
+
+**[Register on Eventbrite →](https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite)**
+
+Proudly sponsored by Miris. This session is part of the DPPA Online Speaker Series, which runs alongside — and separately from — the two Pipeline Conference half-days above.
+
+### The Pipeline Awards Show
+
+**December 2026 · date to be announced**  
+**Streamed on the TPC YouTube channel · Free**
+
+The tenth [Pipeline Awards](/pipeline-awards/) as a produced show: our awardees' work on screen, each of them speaking directly to the audience, messages from the judges, and open rooms on Discord afterwards. Nominations are closed and our independent panel has made its decisions.
+
+Registration links will be posted here and sent to [newsletter](https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv) subscribers as each date is confirmed.
+
+---
 
 ## September 2026
 
-**Thursday, September 17, 2026 All Day Pacific Time  
-The Pipeline Conference - In Person**  
-[Call for Volunteers - Register Your Interest](https://lnkd.in/guRE-KJF)
+**Thursday, September 17, 2026 — CANCELLED**  
+**The Pipeline Conference — In Person, BCIT Vancouver**
 
-The **Digital Production Pipeline Association** is bringing back **The Pipeline Conference**, ***In-Person***, on **September 17th**, in **Vancouver, BC**.
+This event will not take place. The Pipeline Conference will not be held in person in Vancouver in 2026; the programme has moved online as described above. Ticket holders have been refunded in full and automatically.
 
-We're going to need a small army of local **Volunteers** to pull this together on the day; and are also looking for a set of **Committee Chairs** to help build the program, manage operations, production, sponsorship, marketing, ticketing, tech and the **Pipeline Awards**!
-
-Are you an industry professional, thought leader or talented student looking to raise your profile in the industry? Are you aligned with the Digital Production Pipeline Association's mission to share, promote and evolve the best-practices, standards and tools of Animation, VFX and Game industry pipelines? Please use the following form to register your interest: <https://lnkd.in/guRE-KJF>
-
-Join our [Discord channel](https://discord.gg/w3E9KBEQGP) to get access to the newly minted TPC Conference organiser channel, where we will be running threads for the committees and other conference related matters: ⁠[TPC Conference W.G. Recruitment](https://discord.com/channels/874698660393398313/1414849225354641500)
+If you would like to help run what comes next, our working group is still recruiting — join the [TPC Conference W.G. channel](https://discord.com/channels/874698660393398313/1414849225354641500) on [Discord](https://discord.gg/w3E9KBEQGP).
 
 ---
 

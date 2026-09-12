@@ -8,7 +8,26 @@ author: "Fran"
 
 Speakers for our two online half-days — **The Agentic Pipeline** and **The Load-Bearing Pipeline** — are being confirmed now and will be announced here as each one is locked in. [Subscribe to the newsletter](https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv) to hear first.
 
-*Speakers: to be announced.*
+*Half-day speakers: to be announced.*
+
+---
+
+## October 2026 — DPPA Online Speaker Series
+
+**Tuesday, October 20, 2026 from 2:00 PM Pacific Time
+[Large Scale Cloud Native Radiance Field Training for Streamable Assets](https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite)**
+**Video** will be recorded and uploaded to [The Pipeline Conference YouTube channel](https://www.youtube.com/@ThePipelineConference/featured)
+
+**Speaker**
+
+- **Alex Hughes, Senior Software Engineer at Miris**
+
+**Bio**
+
+**Alex Hughes**
+Alex Hughes is a Senior Software Engineer at Miris in Vancouver, BC, where he works on 3D asset streaming at internet scale. His talk covers large scale cloud native radiance field training and what it takes to turn the results into assets that stream — the training infrastructure, the cost model, and the pipeline work in between.
+
+This session is proudly sponsored by **Miris**. [Register on Eventbrite](https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite).
 
 ---
 

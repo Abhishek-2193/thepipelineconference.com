@@ -33,7 +33,7 @@ status_notice:
 online_events:
   eyebrow: "TPC 2026 · Online · Free"
   heading: "Two half-days and an awards show"
-  intro: "Rather than one long day in one city, TPC 2026 runs as two focused half-day events you can join from anywhere, closing out the year with the tenth Pipeline Awards. Dates and speakers are being locked in now — subscribe and you will hear first."
+  intro: "Rather than one long day in one city, TPC 2026 runs as two focused half-day events you can join from anywhere, closing out the year with the tenth Pipeline Awards. Dates and speakers are being locked in now — <a href=\"https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv\">subscribe to our newsletter</a> and you will get the news first."
   items:
     - eyebrow: "Half-day one"
       title: "The Agentic Pipeline"
@@ -47,7 +47,7 @@ online_events:
       body: "Agents are turning up in production pipelines faster than anyone has written the rules for them. A half-day on what is actually working: agentic workflows for asset production, the data layers and security model underneath, DevOps and FinOps for AI services, and honest accounts of what broke on the way."
       cta_pending: "Registration opens soon"
     - eyebrow: "Half-day two"
-      title: "The Load-Bearing Pipeline"
+      title: "Operational Best Practices"
       subtitle: "Pipeline engineering and operations at production scale"
       date: "Date to be announced"
       date_tba: true
@@ -55,7 +55,7 @@ online_events:
       speakers_tba: true
       cost: "Free"
       accent: "amber"
-      body: "The unglamorous half of the job, taken seriously: render farms, storage, OpenUSD in anger, cloud adoption, the migrations that take a year, and keeping the whole thing standing while a show is in flight. Case studies over theory, and failures very welcome."
+      body: "The unglamorous half of the job, taken seriously: render farms, storage, OpenUSD in anger, cloud adoption, the migrations that take a year, and keeping the whole thing standing while a show is in flight. A day of classic Pipeline Conference content on practical topics that matter, kept apart from the chaos and bustle of new workflows introduced by AI."
       cta_pending: "Registration opens soon"
     - eyebrow: "December 2026"
       title: "The Pipeline Awards Show"

@@ -12,21 +12,33 @@ Sessions are recorded where permission is given and published on [The Pipeline C
 
 ### The Agentic Pipeline — half day one
 
-**October 2026 · date to be announced**
+**October 2026 · date to be announced**  
 **Online · Free to attend · Speakers to be announced**
 
 AI and agentic workflows in digital media pipelines: agentic workflows for asset production, the data layers and security model underneath, DevOps and FinOps for AI services, and honest accounts of what broke along the way.
 
-### The Load-Bearing Pipeline — half day two
+### Operational Best Practices — half day two
 
-**Date to be announced**
+**Date to be announced**  
 **Online · Free to attend · Speakers to be announced**
 
-Pipeline engineering and operations at production scale: render farms, storage, OpenUSD in anger, cloud adoption, long migrations, and keeping the whole thing standing while a show is in flight.
+Pipeline engineering and operations at production scale: render farms, storage, OpenUSD in anger, cloud adoption, long migrations, and keeping the whole thing standing while a show is in flight. A day of classic Pipeline Conference content on practical topics that matter, kept apart from the chaos and bustle of new workflows introduced by AI.
+
+### DPPA Online Speaker Series — Alex Hughes
+
+**Tuesday, October 20, 2026 · 2:00 PM Pacific Time**  
+**Online · Free to attend**
+
+**[Large Scale Cloud Native Radiance Field Training for Streamable Assets](https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite)**  
+with **Alex Hughes**, Senior Software Engineer at [Miris](https://www.miris.com/), Vancouver, BC.
+
+**[Register on Eventbrite →](https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite)**
+
+Proudly sponsored by Miris. This session is part of the DPPA Online Speaker Series, which runs alongside — and separately from — the two Pipeline Conference half-days above.
 
 ### The Pipeline Awards Show
 
-**December 2026 · date to be announced**
+**December 2026 · date to be announced**  
 **Streamed on the TPC YouTube channel · Free**
 
 The tenth [Pipeline Awards](/pipeline-awards/) as a produced show: our awardees' work on screen, each of them speaking directly to the audience, messages from the judges, and open rooms on Discord afterwards. Nominations are closed and our independent panel has made its decisions.
@@ -37,7 +49,7 @@ Registration links will be posted here and sent to [newsletter](https://newslett
 
 ## September 2026
 
-**Thursday, September 17, 2026 — CANCELLED**
+**Thursday, September 17, 2026 — CANCELLED**  
 **The Pipeline Conference — In Person, BCIT Vancouver**
 
 This event will not take place. The Pipeline Conference will not be held in person in Vancouver in 2026; the programme has moved online as described above. Ticket holders have been refunded in full and automatically.

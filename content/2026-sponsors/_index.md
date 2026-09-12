@@ -4,32 +4,33 @@ date: 2026-03-26T18:43:20
 author: "Fran"
 ---
 
-TPC appreciates your support.
+## Thank you to Miris
 
-# Sponsorship Packages
+<p><img src="/img/miris-logo.svg" alt="Miris" width="260" style="margin: 8px 0 22px;" /></p>
 
-- Platinum
-  - $10,000
-- Gold
-  - $5,000
-- Silver
-  - $3,000
-- Bronze
-  - $1,500
-- Community
-  - $500
+The Digital Production Pipeline Association is entirely volunteer-run and volunteer-funded. Everything we put on exists because people give up their evenings for it — and because organisations like [Miris](https://www.miris.com/) decide it is worth supporting.
 
----
+**Miris** builds 3D asset streaming at internet scale, and they have backed our community this year in several places:
 
-# Platinum Sponsors
+- **Beers of a Feather at SIGGRAPH 2026** in Los Angeles — our annual social, and the night that closed out our full day of Pipeline sessions
+- **The Pipeline Birds of a Feather day** at SIGGRAPH 2026
+- **The DPPA Online Speaker Series**, sponsoring our October session
 
----
+### The talk they are sponsoring
 
-# Gold Sponsors
+**[Large Scale Cloud Native Radiance Field Training for Streamable Assets](https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite)**  
+with **Alex Hughes**, Senior Software Engineer at Miris  
+**Tuesday 20 October 2026, 2:00 PM Pacific Time · Online · Free**
+
+[Register on Eventbrite →](https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite)
 
 ---
 
-# Community Sponsors
+### Sponsor us
+
+Sponsorship is our lifeblood. If your organisation has something worth putting in front of the people who choose the render farm, the storage, the asset manager and the cloud, we would love to hear from you — sessions across our 2026 online programme and the Pipeline Awards Show are open to sponsor.
+
+Get in touch at [info@thepipelineconference.com](mailto:info@thepipelineconference.com).
 
 ---
 

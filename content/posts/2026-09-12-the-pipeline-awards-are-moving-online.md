@@ -10,10 +10,6 @@ tags: ["Pipeline Awards", "thepipelineconference", "TPC2026", "VFX Pipeline"]
 
 Our in-person conference on 17 September has been cancelled, and the 2026 programme has [moved online](/2026-event-schedule/). We have written elsewhere about what that means for the conference itself. This post is about the part of the day we were least willing to lose.
 
-The Pipeline Awards have run every year since 2014 — six years under Shotgun Software, and every year since under The Pipeline Conference. The tenth edition was going to be presented from a stage in Vancouver at the end of a long day, to whoever was still in the room at 5pm.
-
-They are not being folded quietly into a webinar. They are getting something better.
-
 ## What changes
 
 **The Awards are now their own event.** In December we are closing out the 2026 programme with a featured Awards Show, streamed on [The Pipeline Conference YouTube channel](https://www.youtube.com/@ThePipelineConference). Not a slide at the end of a session — a produced show, with the time and attention the work deserves.

@@ -5,4 +5,8 @@
 {{/* Barlow + IBM Plex Mono are vendored locally in /static/fonts and declared in main.css. */}}
 <link rel="preload" as="font" type="font/woff2" href="/fonts/barlow-700.woff2" crossorigin />
 <link rel="preload" as="font" type="font/woff2" href="/fonts/barlow-400.woff2" crossorigin />
-<link type="text/css" rel="stylesheet" href="/css/main.css" />
+{{/* Fingerprinted so the filename changes whenever the CSS does. Browsers and the
+     GitHub Pages CDN cache /css/main.<hash>.css forever and simply fetch a new URL
+     on the next deploy, instead of serving a stale stylesheet. */}}
+{{ $css := resources.Get "css/main.css" | fingerprint "sha256" }}
+<link type="text/css" rel="stylesheet" href="{{ $css.RelPermalink }}" />

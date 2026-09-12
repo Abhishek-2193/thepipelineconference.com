@@ -4,12 +4,18 @@ date: 2019-02-20T18:14:05
 author: "anoopak"
 ---
 
-![](/uploads/2019/02/reginar-103694-unsplash-1024x813.jpg)
+## TPC 2026 is online, and free
 
-[9am - 4:30pm PT on Tues, July 21, 2026 Pipeline Birds of a Feather at SIGGRAPH - Experience Pass or higher required](https://www.eventbrite.com/e/the-future-of-experiential-services-tickets-1990060281874?aff=TPCWebsite)  
-  
-[TPC In Person Sept 17, 2026  
-Register Your Interest](https://lnkd.in/guRE-KJF)  
-Join the [TPC Working Group Discord](https://discord.com/channels/874698660393398313/1414849225354641500)
+Our in-person conference on 17 September 2026 was cancelled. The programme is running online instead, as two free half-day events from October plus the Pipeline Awards Show in December. There is no ticket price and no travel.
 
-TP
+**Registration links are not open yet.** Dates are being confirmed with our speakers now. The fastest way to get them is to [subscribe to the newsletter](https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv) — subscribers get each link before it goes anywhere else — or to join us on [Discord](https://discord.gg/PU8hygUfbf).
+
+| Event | When | Register |
+| --- | --- | --- |
+| The Agentic Pipeline (half day one) | October 2026, date TBA | Opens soon |
+| The Load-Bearing Pipeline (half day two) | Date TBA | Opens soon |
+| The Pipeline Awards Show | December 2026, date TBA | Opens soon |
+
+Previously bought a ticket for the in-person conference? You have been refunded in full, automatically, and you do not need to do anything.
+
+See the full [2026 programme](/2026-event-schedule/).

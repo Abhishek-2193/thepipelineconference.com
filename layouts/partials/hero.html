@@ -7,7 +7,15 @@
             {{ if $isHome }}
             <div class="banner-lockup">
                 <h1 class="banner-title">{{ .Site.Title }}</h1>
-                <p class="banner-desc">To Promote, Elevate, and Evolve VFX/CG Pipelines</p>
+                <p class="banner-desc">{{ default "To promote, elevate and evolve VFX/CG pipelines" .Params.banner_tagline }}</p>
+
+                {{ with .Params.cancelled_event }}
+                <p class="banner-cancelled">
+                    <span class="banner-cancelled-flag">{{ default "Cancelled" .flag }}</span>
+                    <s>{{ .what }}</s>
+                </p>
+                {{ end }}
+
                 {{ if or .Params.event_location .Params.event_address .Params.event_date .Params.event_time }}
                 <p class="banner-meta">
                     {{ $mapURL := .Params.event_location_url }}
@@ -19,7 +27,9 @@
                 {{ end }}
                 {{ with .Params.banner_blurb }}<p class="banner-blurb">{{ . }}</p>{{ end }}
                 <div class="banner-btn-wrap">
-                    <a class="btn btn-accent" href="https://luma.com/eo1ko3xy" target="_blank" rel="noopener noreferrer">Register Now!</a>
+                    {{ range .Params.banner_buttons }}
+                    <a class="btn {{ default "btn-accent" .style }}" href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .text }}</a>
+                    {{ end }}
                 </div>
             </div>
             {{ else }}

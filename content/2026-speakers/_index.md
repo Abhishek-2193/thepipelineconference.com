@@ -4,6 +4,14 @@ date: 2026-03-26T17:48:48
 author: "Fran"
 ---
 
+## TPC 2026 online programme
+
+Speakers for our two online half-days — **The Agentic Pipeline** and **The Load-Bearing Pipeline** — are being confirmed now and will be announced here as each one is locked in. [Subscribe to the newsletter](https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv) to hear first.
+
+*Speakers: to be announced.*
+
+---
+
 ## June 2026
 
 **Thursday, June 4, 2026 from 3pm - 4:30pm Pacific Time  

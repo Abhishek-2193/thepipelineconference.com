@@ -1,0 +1,37 @@
+{{/* The 2026 online programme: two free half-days plus the Pipeline Awards Show.
+     Content comes from online_events in the home page front matter. */}}
+{{ with .Params.online_events }}
+<section class="events-2026" id="events" aria-label="TPC 2026 online programme">
+    <div class="container">
+        <div class="events-2026-head">
+            {{ with .eyebrow }}<span class="tpc-eyebrow">{{ . }}</span>{{ end }}
+            {{ with .heading }}<h2 class="events-2026-title">{{ . }}</h2>{{ end }}
+            {{ with .intro }}<p class="events-2026-intro">{{ . | safeHTML }}</p>{{ end }}
+        </div>
+        <div class="events-grid">
+            {{ range $event := .items }}
+            <article class="event-card event-card--{{ default "cyan" $event.accent }}">
+                <div class="event-card-rule"></div>
+                <div class="event-card-inner">
+                    <p class="event-card-eyebrow">{{ $event.eyebrow }}</p>
+                    <h3 class="event-card-title">{{ $event.title }}</h3>
+                    <p class="event-card-sub">{{ $event.subtitle }}</p>
+                    <p class="event-card-meta"><strong>When</strong> {{ if $event.date_tba }}<span class="tba">Date TBA</span>{{ else }}{{ $event.date }}{{ end }}</p>
+                    <p class="event-card-meta"><strong>Format</strong> {{ $event.format }}</p>
+                    <p class="event-card-meta"><strong>Speakers</strong> {{ if $event.speakers_tba }}<span class="tba">To be announced</span>{{ else }}{{ $event.speakers }}{{ end }}</p>
+                    {{ with $event.cost }}<p class="event-card-meta"><strong>Cost</strong> <span class="pill">{{ . }}</span></p>{{ end }}
+                    <p class="event-card-body">{{ $event.body | safeHTML }}</p>
+                    <div class="event-card-foot">
+                        {{ if $event.cta_url }}
+                        <a class="btn {{ if eq (default "cyan" $event.accent) "amber" }}btn-accent{{ else }}btn-transparent{{ end }}" href="{{ $event.cta_url }}"{{ if hasPrefix $event.cta_url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ default "Register free" $event.cta_text }}</a>
+                        {{ else }}
+                        <span class="tba">{{ default "Registration opens soon" $event.cta_pending }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

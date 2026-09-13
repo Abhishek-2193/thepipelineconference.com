@@ -16,7 +16,7 @@ programme:
       format: "Online · Free to attend · Recorded"
       accent: "cyan"
       cta_pending: "Registration opens soon"
-      body: "Agents are turning up in production pipelines faster than anyone has written the rules for them. Three sessions on what is actually working: why control belongs in the pipeline rather than the prompt, governance and artist-centric AI workflows at a working animation studio, and an agentic framework running inside standard 3D software at Ubisoft."
+      body: "Agents are turning up in production pipelines faster than anyone has written the rules for them. Three sessions on the work that puts them under pipeline control — from why the prompt is the wrong place for it, to a studio and a games publisher who have built the alternative."
       sessions:
         - tag: "Keynote"
           speakers:
@@ -47,7 +47,7 @@ programme:
       format: "Online · Free to attend · Recorded"
       accent: "amber"
       cta_pending: "Registration opens soon"
-      body: "The unglamorous half of the job, taken seriously: OpenUSD adoption that survives contact with production, studio storage that stops being the bottleneck, and agentic QC that runs on artist workstations without your data leaving the building. Classic Pipeline Conference content on the practical problems that decide whether a show ships."
+      body: "The unglamorous half of the job, taken seriously: the format, the storage and the automation that everything else in a studio sits on top of. Classic Pipeline Conference content on the practical problems that decide whether a show ships."
       sessions:
         - title: "Roadmap & Strategy to Accelerate OpenUSD Adoption within Pipelines"
           speakers:

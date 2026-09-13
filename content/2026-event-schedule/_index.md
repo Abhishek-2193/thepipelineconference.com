@@ -2,50 +2,105 @@
 title: "2026 Event Schedule"
 date: 2026-03-18T16:11:40
 author: "Fran"
+
+programme:
+  eyebrow: "TPC 2026 · Online · Free to attend"
+  heading: "The 2026 online programme"
+  intro: 'Our in-person conference in Vancouver was cancelled. The programme our volunteers built for it is running online instead: two free half-days in October, and the tenth Pipeline Awards in December. Sessions are recorded where permission is given and published on <a href="https://www.youtube.com/@ThePipelineConference">The Pipeline Conference YouTube channel</a>.'
+  days:
+    - eyebrow: "Half-day one"
+      title: "The Agentic Pipeline"
+      subtitle: "AI and agentic workflows in digital media pipelines"
+      date: "Tuesday 20 October 2026"
+      time: "09:00 – 12:00 Pacific Time"
+      format: "Online · Free to attend · Recorded"
+      accent: "cyan"
+      cta_pending: "Registration opens soon"
+      body: "Agents are turning up in production pipelines faster than anyone has written the rules for them. Three sessions on what is actually working: why control belongs in the pipeline rather than the prompt, governance and artist-centric AI workflows at a working animation studio, and an agentic framework running inside standard 3D software at Ubisoft."
+      sessions:
+        - tag: "Keynote"
+          speakers:
+            - name: "Hanno Basse"
+              url: "https://www.linkedin.com/in/hannobasse/"
+          abstract: "This keynote deconstructs generative models from the pixel up, exposing why their built-in limitations require us to move control out of the prompt and back into our own pipelines."
+        - speakers:
+            - name: "Bert Van Brande"
+              url: "https://www.linkedin.com/in/bertvanbrande/"
+            - name: "Fermi Perumal"
+          org: "Stellar Creative Labs, Vancouver"
+          abstract: "Stellar Creative Labs, a Vancouver-based animation studio, walks through the process and the journey of developing governance, controls and artist-centric AI workflows — embedding generative workflows directly into established creative production pipelines. Together, these applications help artists retain control over asset creation, rights management and model behaviour."
+        - title: "From Brief to Scene: Agentic AI for Asset Production at Ubisoft"
+          speakers:
+            - name: "Cyrus Rahgoshay"
+              url: "https://www.linkedin.com/in/cyrusrahgoshay/"
+          org: "Ubisoft"
+          abstract: "While generative AI often focuses on generating raw media, the biggest production bottlenecks lie in the operational overhead surrounding game and film pipelines. This presentation introduces an agentic AI framework which embeds autonomous agents directly into standard 3D software to translate creative briefs into production-ready scenes. By automating scene assembly, pipeline validation and asset handoffs, the architecture shifts AI from an unpredictable generator into an integrated engine for studio-scale efficiency."
+          links:
+            - text: "Read the paper"
+              url: "https://dl.acm.org/doi/10.1145/3819990.3820033"
+
+    - eyebrow: "Half-day two"
+      title: "Core Pipeline Services"
+      subtitle: "Pipeline engineering and operations at production scale"
+      date: "Tuesday 27 October 2026"
+      time: "09:00 – 12:00 Pacific Time"
+      format: "Online · Free to attend · Recorded"
+      accent: "amber"
+      cta_pending: "Registration opens soon"
+      body: "The unglamorous half of the job, taken seriously: OpenUSD adoption that survives contact with production, studio storage that stops being the bottleneck, and agentic QC that runs on artist workstations without your data leaving the building. Classic Pipeline Conference content on the practical problems that decide whether a show ships."
+      sessions:
+        - title: "Roadmap & Strategy to Accelerate OpenUSD Adoption within Pipelines"
+          speakers:
+            - name: "Dan Englesson"
+              url: "https://www.linkedin.com/in/dan-englesson-b07407354/"
+          org: "Previously Head of Pipeline at Goodbye Kansas, and at Pixar"
+          abstract: "A structured, four-stage engagement that moves teams from initial evaluation to full production readiness. It opens with focused pipeline discovery and strategic roadmapping, then builds, converts assets and integrates OpenUSD directly into live production workflows. The objective is to leave studios able to independently maintain and scale their own unified 3D pipeline."
+        - speakers:
+            - name: "Alan McSeveney"
+              url: "https://www.linkedin.com/in/alanmcseveney/"
+          org: "Previously CTO at Preymaker and Head of Technology at The Mill"
+          abstract: "Alan McSeveney co-founded the wholly cloud-native studio Preymaker and spent over a decade leading technology at The Mill. He shares how unifying studio storage into a single high-performance architecture eliminates data bottlenecks across complex VFX rendering, real-time playback and cloud-bursting pipelines — and how removing those I/O limits lets production teams scale traditional visual effects while preparing the same infrastructure for next-generation generative AI workloads."
+        - title: "Introducing Agentic Workflows into Core Pipeline Automation & Governance"
+          speakers:
+            - name: "Cole Pearsall"
+              url: "https://www.linkedin.com/in/cole-pearsall/"
+          abstract: "Bringing an agentic QC capability to life means shifting from rigid, hardcoded scripts to a secure multi-agent architecture grounded in studio-specific knowledge. By pairing specialised AI agents with lightweight local proxies, studios can run complex DCC checks and scene evaluations directly on artist workstations without exposing proprietary data. The approach automates tedious layout-to-animation handoffs in seconds, delivering clear, evidence-based pass/fail reports, and scales across other pipeline bottlenecks."
+
+    - eyebrow: "October 2026"
+      title: "DPPA Online Speaker Series"
+      subtitle: "Proudly sponsored by Miris"
+      date: "Tuesday 20 October 2026"
+      time: "14:00 Pacific Time"
+      format: "Online · Free to attend · Recorded"
+      accent: "green"
+      cta_text: "Register on Eventbrite"
+      cta_url: "https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite"
+      body: "A one-off talk on the afternoon of our first half-day, and the one session of the three you can already register for."
+      sessions:
+        - title: "Large Scale Cloud Native Radiance Field Training for Streamable Assets"
+          speakers:
+            - name: "Alex Hughes"
+          org: 'Senior Software Engineer at <a href="https://www.miris.com/">Miris</a>, Vancouver, BC'
+          abstract: "Alex works on 3D asset streaming at internet scale. His talk covers large scale cloud native radiance field training and what it takes to turn the results into assets that stream — the training infrastructure, the cost model, and the pipeline work in between."
+      footnote: "The DPPA Online Speaker Series runs alongside — and separately from — the two Pipeline Conference half-days above."
+
+    - eyebrow: "December 2026"
+      title: "The Pipeline Awards Show"
+      subtitle: "The tenth Pipeline Awards, as a produced show"
+      date: "December 2026"
+      date_tba: true
+      format: "Streamed on the TPC YouTube channel · Free"
+      accent: "purple"
+      cta_text: "About the awards"
+      cta_url: "/pipeline-awards/"
+      body: "Our awardees' work on screen, each of them speaking directly to the audience, messages from the judges, and open rooms on Discord afterwards. Nominations are closed and our independent panel has made its decisions."
 ---
 
-TPC 2026 is running online. Our in-person conference in Vancouver was cancelled; the programme built for it is being delivered as two free half-day events from October, followed by the tenth Pipeline Awards in December.
-
-Sessions are recorded where permission is given and published on [The Pipeline Conference YouTube channel](https://www.youtube.com/@ThePipelineConference).
-
-## The 2026 online programme
-
-### The Agentic Pipeline — half day one
-
-**October 2026 · date to be announced**  
-**Online · Free to attend · Speakers to be announced**
-
-AI and agentic workflows in digital media pipelines: agentic workflows for asset production, the data layers and security model underneath, DevOps and FinOps for AI services, and honest accounts of what broke along the way.
-
-### Operational Best Practices — half day two
-
-**Date to be announced**  
-**Online · Free to attend · Speakers to be announced**
-
-Pipeline engineering and operations at production scale: render farms, storage, OpenUSD in anger, cloud adoption, long migrations, and keeping the whole thing standing while a show is in flight. A day of classic Pipeline Conference content on practical topics that matter, kept apart from the chaos and bustle of new workflows introduced by AI.
-
-### DPPA Online Speaker Series — Alex Hughes
-
-**Tuesday, October 20, 2026 · 2:00 PM Pacific Time**  
-**Online · Free to attend**
-
-**[Large Scale Cloud Native Radiance Field Training for Streamable Assets](https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite)**  
-with **Alex Hughes**, Senior Software Engineer at [Miris](https://www.miris.com/), Vancouver, BC.
-
-**[Register on Eventbrite →](https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite)**
-
-Proudly sponsored by Miris. This session is part of the DPPA Online Speaker Series, which runs alongside — and separately from — the two Pipeline Conference half-days above.
-
-### The Pipeline Awards Show
-
-**December 2026 · date to be announced**  
-**Streamed on the TPC YouTube channel · Free**
-
-The tenth [Pipeline Awards](/pipeline-awards/) as a produced show: our awardees' work on screen, each of them speaking directly to the audience, messages from the judges, and open rooms on Discord afterwards. Nominations are closed and our independent panel has made its decisions.
-
-Registration links will be posted here and sent to [newsletter](https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv) subscribers as each date is confirmed.
+Registration for the two half-days opens shortly, and links will be posted here and sent to [newsletter](https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv) subscribers first.
 
 ---
+
+## The rest of the 2026 calendar
 
 ## September 2026
 

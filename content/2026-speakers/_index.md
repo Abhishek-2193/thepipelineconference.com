@@ -6,9 +6,39 @@ author: "Fran"
 
 ## TPC 2026 online programme
 
-Speakers for our two online half-days — **The Agentic Pipeline** and **The Load-Bearing Pipeline** — are being confirmed now and will be announced here as each one is locked in. [Subscribe to the newsletter](https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv) to hear first.
+Our two free online half-days are **The Agentic Pipeline** on Tuesday 20 October and **Core Pipeline Services** on Tuesday 27 October, both 9:00am – 12:00pm Pacific Time. The full run of show is on the [schedule page](/2026-event-schedule/). Registration opens shortly — [subscribe to the newsletter](https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv) and you will get the link first.
 
-*Half-day speakers: to be announced.*
+### The Agentic Pipeline — half-day one
+
+**Tuesday 20 October 2026 · 9:00am – 12:00pm Pacific Time**
+**Online · Free to attend · Recorded**
+
+**Keynote — [Hanno Basse](https://www.linkedin.com/in/hannobasse/)**
+This keynote deconstructs generative models from the pixel up, exposing why their built-in limitations require us to move control out of the prompt and back into our own pipelines.
+
+**[Bert Van Brande](https://www.linkedin.com/in/bertvanbrande/) and Fermi Perumal — Stellar Creative Labs, Vancouver**
+Stellar Creative Labs, a Vancouver-based animation studio, walks through the process and the journey of developing governance, controls and artist-centric AI workflows — embedding generative workflows directly into established creative production pipelines. Together, these applications help artists retain control over asset creation, rights management and model behaviour.
+
+**[Cyrus Rahgoshay](https://www.linkedin.com/in/cyrusrahgoshay/) — Ubisoft**
+*From Brief to Scene: Agentic AI for Asset Production at Ubisoft*
+While generative AI often focuses on generating raw media, the biggest production bottlenecks lie in the operational overhead surrounding game and film pipelines. This presentation introduces an agentic AI framework which embeds autonomous agents directly into standard 3D software to translate creative briefs into production-ready scenes. By automating scene assembly, pipeline validation and asset handoffs, the architecture shifts AI from an unpredictable generator into an integrated engine for studio-scale efficiency.
+[Read the paper](https://dl.acm.org/doi/10.1145/3819990.3820033)
+
+### Core Pipeline Services — half-day two
+
+**Tuesday 27 October 2026 · 9:00am – 12:00pm Pacific Time**
+**Online · Free to attend · Recorded**
+
+**[Dan Englesson](https://www.linkedin.com/in/dan-englesson-b07407354/) — previously Head of Pipeline at Goodbye Kansas, and at Pixar**
+*Roadmap & Strategy to Accelerate OpenUSD Adoption within Pipelines*
+A structured, four-stage engagement that moves teams from initial evaluation to full production readiness. It opens with focused pipeline discovery and strategic roadmapping, then builds, converts assets and integrates OpenUSD directly into live production workflows. The objective is to leave studios able to independently maintain and scale their own unified 3D pipeline.
+
+**[Alan McSeveney](https://www.linkedin.com/in/alanmcseveney/) — previously CTO at Preymaker and Head of Technology at The Mill**
+Alan McSeveney co-founded the wholly cloud-native studio Preymaker and spent over a decade leading technology at The Mill. He shares how unifying studio storage into a single high-performance architecture eliminates data bottlenecks across complex VFX rendering, real-time playback and cloud-bursting pipelines — and how removing those I/O limits lets production teams scale traditional visual effects while preparing the same infrastructure for next-generation generative AI workloads.
+
+**[Cole Pearsall](https://www.linkedin.com/in/cole-pearsall/)**
+*Introducing Agentic Workflows into Core Pipeline Automation & Governance*
+Bringing an agentic QC capability to life means shifting from rigid, hardcoded scripts to a secure multi-agent architecture grounded in studio-specific knowledge. By pairing specialised AI agents with lightweight local proxies, studios can run complex DCC checks and scene evaluations directly on artist workstations without exposing proprietary data. The approach automates tedious layout-to-animation handoffs in seconds, delivering clear, evidence-based pass/fail reports, and scales across other pipeline bottlenecks.
 
 ---
 

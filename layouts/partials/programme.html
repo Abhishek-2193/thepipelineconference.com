@@ -1,0 +1,82 @@
+{{/* The 2026 online programme as a run of show. Days and sessions come from
+     `programme` in the page front matter, so this is data rather than markup. */}}
+{{ with .Params.programme }}
+<section class="programme" id="programme" aria-label="TPC 2026 online programme">
+  <div class="container">
+    <div class="programme-head">
+      {{ with .eyebrow }}<span class="tpc-eyebrow">{{ . }}</span>{{ end }}
+      {{ with .heading }}<h2 class="programme-title">{{ . }}</h2>{{ end }}
+      {{ with .intro }}<p class="programme-intro">{{ . | safeHTML }}</p>{{ end }}
+    </div>
+
+    {{ range $day := .days }}
+    {{ $accent := default "cyan" $day.accent }}
+    <article class="prog-day prog-day--{{ $accent }}">
+      <div class="prog-day-rule"></div>
+      <div class="prog-day-head">
+        <div class="prog-day-when">
+          {{ with $day.eyebrow }}<p class="prog-day-eyebrow">{{ . }}</p>{{ end }}
+          {{ if $day.date_tba }}
+          <p class="prog-day-date"><span class="tba">Date TBA</span></p>
+          {{ else }}
+          <p class="prog-day-date">{{ $day.date }}</p>
+          {{ with $day.time }}<p class="prog-day-time">{{ . }}</p>{{ end }}
+          {{ end }}
+          {{ with $day.format }}<p class="prog-day-format">{{ . }}</p>{{ end }}
+          <div class="prog-day-cta">
+            {{ if $day.cta_url }}
+            <a class="btn {{ if eq $accent "amber" }}btn-accent{{ else }}btn-transparent{{ end }}" href="{{ $day.cta_url }}"{{ if hasPrefix $day.cta_url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ default "Register free" $day.cta_text }}</a>
+            {{ else }}
+            <span class="tba">{{ default "Registration opens soon" $day.cta_pending }}</span>
+            {{ end }}
+          </div>
+        </div>
+
+        <div class="prog-day-what">
+          <h3 class="prog-day-title">{{ $day.title }}</h3>
+          {{ with $day.subtitle }}<p class="prog-day-sub">{{ . }}</p>{{ end }}
+          {{ with $day.body }}<p class="prog-day-body">{{ . | safeHTML }}</p>{{ end }}
+        </div>
+      </div>
+
+      {{ with $day.sessions }}
+      <ol class="prog-sessions">
+        {{ range $i, $s := . }}
+        <li class="prog-session">
+          <div class="prog-session-rail">
+            <span class="prog-session-num">{{ printf "%02d" (add $i 1) }}</span>
+            {{ with $s.tag }}<span class="prog-session-tag">{{ . }}</span>{{ end }}
+          </div>
+          <div class="prog-session-main">
+            {{ with $s.title }}<h4 class="prog-session-title">{{ . }}</h4>{{ end }}
+            {{ with $s.speakers }}
+            <p class="prog-session-people{{ if not $s.title }} prog-session-people--lead{{ end }}">
+              {{- range $n, $p := . -}}
+              {{- if $n }}<span class="prog-session-amp">and</span>{{ end -}}
+              {{- if $p.url -}}
+              <a class="prog-session-name" href="{{ $p.url }}" target="_blank" rel="noopener noreferrer">{{ $p.name }}</a>
+              {{- else -}}
+              <span class="prog-session-name">{{ $p.name }}</span>
+              {{- end -}}
+              {{- end -}}
+            </p>
+            {{ end }}
+            {{ with $s.org }}<p class="prog-session-org">{{ . | safeHTML }}</p>{{ end }}
+            {{ with $s.abstract }}<p class="prog-session-abstract">{{ . | safeHTML }}</p>{{ end }}
+            {{ with $s.links }}
+            <p class="prog-session-links">
+              {{ range . }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .text }}</a>{{ end }}
+            </p>
+            {{ end }}
+          </div>
+        </li>
+        {{ end }}
+      </ol>
+      {{ end }}
+
+      {{ with $day.footnote }}<p class="prog-day-footnote">{{ . | safeHTML }}</p>{{ end }}
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

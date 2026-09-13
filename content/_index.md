@@ -11,10 +11,10 @@ cancelled_event:
 
 event_location: "TPC 2026 is now online"
 event_address: "Free to attend, from anywhere"
-event_date: "Two half-days, from October 2026"
-event_time: "Dates to be announced"
+event_date: "Two free half-days · 20 and 27 October 2026"
+event_time: "09:00 – 12:00 Pacific Time"
 
-banner_blurb: "The programme our volunteers built for Vancouver is moving online: two free half-day events for pipeline professionals across animation, VFX, games and real-time media — followed by the tenth Pipeline Awards in December."
+banner_blurb: "The programme our volunteers built for Vancouver has moved online: two free half-days on Tuesday 20 and Tuesday 27 October for pipeline professionals across animation, VFX, games and real-time media — followed by the tenth Pipeline Awards in December."
 
 banner_buttons:
   - text: "See the 2026 programme"
@@ -33,29 +33,27 @@ status_notice:
 online_events:
   eyebrow: "TPC 2026 · Online · Free"
   heading: "Two half-days and an awards show"
-  intro: "Rather than one long day in one city, TPC 2026 runs as two focused half-day events you can join from anywhere, closing out the year with the tenth Pipeline Awards. Dates and speakers are being locked in now — <a href=\"https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv\">subscribe to our newsletter</a> and you will get the news first."
+  intro: "Rather than one long day in one city, TPC 2026 runs as two focused half-day events you can join from anywhere, closing out the year with the tenth Pipeline Awards. Both half-days are free — <a href=\"/2026-event-schedule/\">see the full run of show</a>, or <a href=\"https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv\">subscribe to our newsletter</a> and you will get the registration links first."
   items:
     - eyebrow: "Half-day one"
       title: "The Agentic Pipeline"
       subtitle: "AI and agentic workflows in digital media pipelines"
-      date: "October 2026"
-      date_tba: true
-      format: "Half day · Online · Recorded"
-      speakers_tba: true
+      date: "Tuesday 20 October 2026"
+      format: "09:00 – 12:00 Pacific · Online · Recorded"
+      speakers: "Hanno Basse (keynote), Bert Van Brande and Fermi Perumal, Cyrus Rahgoshay"
       cost: "Free"
       accent: "cyan"
-      body: "Agents are turning up in production pipelines faster than anyone has written the rules for them. A half-day on what is actually working: agentic workflows for asset production, the data layers and security model underneath, DevOps and FinOps for AI services, and honest accounts of what broke on the way."
+      body: "Agents are turning up in production pipelines faster than anyone has written the rules for them. Three sessions on what is actually working: why control belongs in the pipeline rather than the prompt, governance and artist-centric AI workflows at a working animation studio, and an agentic framework running inside standard 3D software at Ubisoft."
       cta_pending: "Registration opens soon"
     - eyebrow: "Half-day two"
-      title: "Operational Best Practices"
+      title: "Core Pipeline Services"
       subtitle: "Pipeline engineering and operations at production scale"
-      date: "Date to be announced"
-      date_tba: true
-      format: "Half day · Online · Recorded"
-      speakers_tba: true
+      date: "Tuesday 27 October 2026"
+      format: "09:00 – 12:00 Pacific · Online · Recorded"
+      speakers: "Dan Englesson, Alan McSeveney, Cole Pearsall"
       cost: "Free"
       accent: "amber"
-      body: "The unglamorous half of the job, taken seriously: render farms, storage, OpenUSD in anger, cloud adoption, the migrations that take a year, and keeping the whole thing standing while a show is in flight. A day of classic Pipeline Conference content on practical topics that matter, kept apart from the chaos and bustle of new workflows introduced by AI."
+      body: "The unglamorous half of the job, taken seriously: OpenUSD adoption that survives contact with production, studio storage that stops being the bottleneck, and agentic QC that runs on artist workstations without your data leaving the building. Classic Pipeline Conference content on the practical problems that decide whether a show ships."
       cta_pending: "Registration opens soon"
     - eyebrow: "December 2026"
       title: "The Pipeline Awards Show"
@@ -63,7 +61,7 @@ online_events:
       date: "December 2026"
       date_tba: true
       format: "Streamed show · Free"
-      speakers_tba: true
+      speakers: "Announced on the night"
       cost: "Free"
       accent: "purple"
       body: "The tenth Pipeline Awards, as a produced show rather than a line item at the end of a long day. Our awardees' work on screen, each of them speaking to you directly, messages from the judges, and open rooms on Discord afterwards so you can talk to the people whose tools you depend on."

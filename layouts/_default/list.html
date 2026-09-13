@@ -10,6 +10,11 @@
 <body>
     {{ partial "masthead.html" . }}
     {{ partial "hero.html" . }}
+
+    {{ with .Params.programme }}
+    {{ partial "programme.html" $ }}
+    {{ end }}
+
     {{ partial "content.html" . }}
 
     {{ with .Params.team_groups }}

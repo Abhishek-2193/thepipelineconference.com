@@ -12,6 +12,12 @@
     {{ partial "hero.html" . }}
     {{ partial "content.html" . }}
 
+    {{ with .Params.team_groups }}
+    <div class="container">
+        {{ partial "team-grid.html" $ }}
+    </div>
+    {{ end }}
+
     <div class="container post-list">
         {{ range .Pages.ByDate.Reverse }}
         <a class="post-list-item" href="{{ .Permalink }}">

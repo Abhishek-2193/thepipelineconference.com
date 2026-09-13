@@ -1,0 +1,30 @@
+{{/* Team roster. Groups and people come from team_groups in the page front matter,
+     so the page is data, not hand-written markup. */}}
+{{ with .Params.team_groups }}
+<div class="team">
+  {{ range $group := . }}
+  <section class="team-group">
+    <div class="team-group-head">
+      {{ with $group.eyebrow }}<p class="team-group-eyebrow">{{ . }}</p>{{ end }}
+      <h2 class="team-group-title">{{ $group.heading }}</h2>
+      {{ with $group.intro }}<p class="team-group-intro">{{ . | safeHTML }}</p>{{ end }}
+    </div>
+    <ul class="team-grid">
+      {{ range $p := $group.people }}
+      <li class="team-card{{ if $p.open }} team-card--open{{ end }}">
+        {{ if $p.image }}
+        <img class="team-photo" src="{{ $p.image | relURL }}" alt="{{ $p.name }}" width="600" height="600" loading="lazy" />
+        {{ else }}
+        <span class="team-photo team-photo--placeholder" aria-hidden="true">+</span>
+        {{ end }}
+        <p class="team-name">{{ $p.name }}</p>
+        <p class="team-role">{{ $p.role }}{{ with $p.badge }} <span class="team-badge">{{ . }}</span>{{ end }}</p>
+        {{ with $p.org }}<p class="team-org">{{ . }}</p>{{ end }}
+        {{ with $p.link }}<a class="team-link" href="{{ . }}">{{ default "Get involved" $p.link_text }} &rarr;</a>{{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+</div>
+{{ end }}

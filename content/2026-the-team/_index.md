@@ -2,51 +2,90 @@
 title: "2026 The Team"
 date: 2026-03-18T16:38:19
 author: "Fran"
+
+team_groups:
+  - eyebrow: "TPC 2026 Working Group"
+    heading: "The chairs"
+    intro: "Every one of these people is a working pipeline professional who volunteered their evenings to put TPC 2026 together. When the ground moved, they turned a conference into an online programme that reaches far more of you than a room in Vancouver could have."
+    people:
+      - name: "Liviu Constantinescu"
+        role: "Conference Chair"
+        org: "Vice President, DPPA"
+        image: "/uploads/2026/09/team/liviu-constantinescu.jpg"
+      - name: "Irina Mengqi Wang"
+        role: "Program Chair"
+        image: "/uploads/2026/09/team/irina-mengqi-wang.jpg"
+      - name: "David Martinez"
+        role: "Operations Chair"
+        image: "/uploads/2026/09/team/david-martinez.jpg"
+      - name: "Terrell King"
+        role: "Sponsorship Chair"
+        image: "/uploads/2026/09/team/terrell-king.jpg"
+      - name: "Abhishek Ravi"
+        role: "Communications Chair"
+        badge: "New"
+        image: "/uploads/2026/09/team/abhishek-ravi.jpg"
+      - name: "James Spadafora"
+        role: "Awards Chair"
+        image: "/uploads/2026/09/team/james-spadafora.jpg"
+      - name: "David Lowe"
+        role: "Production Co-Chair"
+        image: "/uploads/2026/09/team/david-lowe.jpg"
+      - name: "Jonathan Peters"
+        role: "Production Co-Chair"
+        image: "/uploads/2026/09/team/jonathan-peters.jpg"
+      - name: "Maelle McCallum"
+        role: "Registration Chair"
+        image: "/uploads/2026/09/team/maelle-mccallum.jpg"
+
+  - eyebrow: "TPC 2026 Working Group"
+    heading: "Committee and crew"
+    intro: "The programme does not run on chairs alone."
+    people:
+      - name: "Eric Salituro"
+        role: "Program Committee"
+        image: "/uploads/2026/09/team/eric-salituro.jpg"
+      - name: "Nathan Vandevoort"
+        role: "Project Manager"
+        image: "/uploads/2026/09/team/nathan-vandevoort.jpg"
+      - name: "Sophia Don Tranho"
+        role: "Production Committee"
+        image: "/uploads/2026/09/team/sophia-don-tranho.jpg"
+      - name: "Could be you"
+        role: "Volunteers welcome"
+        open: true
+        link: "https://docs.google.com/document/d/1mOe9ReNd78O0OpVPV3Riu9kxBBPzHm3srMJVHcmVqiQ"
+        link_text: "Join us"
+
+  - eyebrow: "Digital Production Pipeline Association"
+    heading: "The DPPA Board"
+    intro: "The Pipeline Conference is the flagship event of the DPPA. The Board carries the organisation between conferences and mentors each year's working group."
+    people:
+      - name: "Fran Zandonella Benjamin"
+        role: "Founder"
+        org: "The Pipeline Conference"
+        image: "/uploads/2026/09/team/fran-zandonella-benjamin.jpg"
+      - name: "Ryan Bottriell"
+        role: "President"
+        image: "/uploads/2026/09/team/ryan-bottriell.jpg"
+      - name: "Liviu Constantinescu"
+        role: "Vice President"
+        org: "2026 Conference Chair"
+        image: "/uploads/2026/09/team/liviu-constantinescu.jpg"
+      - name: "Dennis Hebbard"
+        role: "Programs Chair"
+        org: "Board Mentor — Program & Sponsorship"
+        image: "/uploads/2026/09/team/dennis-hebbard.jpg"
+      - name: "Tram Le-Jones"
+        role: "Operations Chair"
+        image: "/uploads/2026/09/team/tram-le-jones.jpg"
+      - name: "Christopher Janney"
+        role: "Operations & Programs Committee"
+        image: "/uploads/2026/09/team/christopher-janney.jpg"
+      - name: "Kristine Middlemiss"
+        role: "Sponsorship Committee"
+        image: "/uploads/2026/09/team/kristine-middlemiss.jpg"
+      - name: "David Vega"
+        role: "Programs Committee"
+        image: "/uploads/2026/09/team/david-vega.jpg"
 ---
-
-![](/uploads/2026/03/Fran_Zandonella_Benjamin_LinkedIn_2-1-259x300.jpg)
-
-Fran Zandonella Benjamin  
-Founder  
-The Pipeline Conference
-
-![](/uploads/2021/06/Ryan-Bottriell-300x300.jpg)
-
-Ryan Bottriel  
-President  
-Digital Production Pipeline Association
-
-![](/uploads/2026/03/Liviu_Constantinescu-300x240.jpg)
-
-Liviu Constantinescu  
-Vice President, Digital Production Pipeline Association  
-2026 Conference Chair, The Pipeline Conference
-
-![](/uploads/2022/07/dennis_hebbard-300x300.png)
-
-Dennis Hebbard  
-Programs Chair
-
-![Tram Le Jones](/uploads/2021/07/485d3e7641758a42768ed5ae789d5659.png)
-
-Tram Le-Jones  
-Operations Chair
-
-![](/uploads/2022/07/self-300x300.jpeg)
-
-Christopher Janney  
-Operations & Programs Committee
-
-![](/uploads/2025/10/Kristine_Middlemiss-225x300.jpg)
-
-Kristine Middlemiss  
-Sponsorship Committee
-
-![](/uploads/2026/03/image-2.png)
-
-David Vega  
-Programs Commitee
-
-![](/uploads/2022/07/Untitled_Artwork-2.png)
-
-Volunteer Here

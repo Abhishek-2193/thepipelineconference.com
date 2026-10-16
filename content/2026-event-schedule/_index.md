@@ -35,7 +35,7 @@ programme:
           speakers:
             - name: "Cyrus Rahgoshay"
               url: "https://www.linkedin.com/in/cyrusrahgoshay/"
-          org: "Previously at Ubisoft"
+          org: "Autodesk (previously Ubisoft)"
           abstract: "While generative AI often focuses on generating raw media, the biggest production bottlenecks lie in the operational overhead surrounding game and film pipelines. This presentation introduces an agentic AI framework which embeds autonomous agents directly into standard 3D software to translate creative briefs into production-ready scenes. By automating scene assembly, pipeline validation and asset handoffs, the architecture shifts AI from an unpredictable generator into an integrated engine for studio-scale efficiency."
           links:
             - text: "Read the paper"

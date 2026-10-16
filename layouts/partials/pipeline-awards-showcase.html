@@ -1,0 +1,63 @@
+{{ $awards := hugo.Data.pipeline_awards_2026 }}
+{{ if and $awards $awards.nominees }}
+<section class="awards-showcase" data-awards aria-labelledby="awards-showcase-title">
+    <div class="container">
+        <div class="awards-stage" data-awards-stage>
+            <div class="awards-stage-head">
+                <h2 id="awards-showcase-title">Voting is now open</h2>
+                {{ if $awards.vote_url }}
+                <a class="btn btn-accent awards-vote" href="{{ $awards.vote_url }}" target="_blank" rel="noopener noreferrer">Vote now</a>
+                {{ end }}
+            </div>
+
+            <p class="awards-empty" data-awards-empty>Select a nominee below to learn more</p>
+
+            {{ range $nominee := $awards.nominees }}
+            <article class="awards-panel" data-awards-panel="{{ $nominee.id }}" hidden>
+                <div class="awards-panel-layout">
+                    <div class="awards-video">
+                        {{ if $nominee.video_id }}
+                        <iframe data-src="https://www.youtube-nocookie.com/embed/{{ $nominee.video_id }}" title="{{ $nominee.title }} video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        {{ else }}
+                        <p class="awards-video-fallback">Video coming soon</p>
+                        {{ end }}
+                    </div>
+                    <div class="awards-panel-copy">
+                        <h3 tabindex="-1">{{ $nominee.title }}</h3>
+                        {{ with $nominee.contributors }}
+                        <p class="awards-contributors">{{ . }}</p>
+                        {{ end }}
+                    </div>
+                    <div class="awards-panel-detail">
+                        <div class="awards-writeup">{{ $nominee.writeup | markdownify }}</div>
+                        {{ with $nominee.links }}
+                        <p class="awards-links-label">Links</p>
+                        <ul class="awards-links">
+                            {{ range . }}
+                            <li><a href="{{ .url | safeURL }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a></li>
+                            {{ end }}
+                        </ul>
+                        {{ end }}
+                    </div>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+
+        <div class="awards-grid" data-awards-grid>
+            {{ $rules := slice "cyan" "amber" "purple" "green" "orange" }}
+            {{ range $index, $nominee := $awards.nominees }}
+            <button type="button" class="awards-card" data-awards-open="{{ $nominee.id }}" aria-label="Learn more about {{ $nominee.title }}">
+                <div class="awards-card-rule awards-card-rule--{{ index $rules (mod $index 5) }}"></div>
+                <div class="awards-card-media">
+                    <img src="{{ $nominee.image | relURL }}" alt="{{ $nominee.image_alt }}">
+                    <span class="awards-card-index">{{ printf "%02d" (add $index 1) }}</span>
+                </div>
+                <p class="awards-card-title">{{ $nominee.title }}</p>
+                <span class="awards-learn">Learn more</span>
+            </button>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

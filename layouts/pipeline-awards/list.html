@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    {{ partial "stylesheets" . }}
+</head>
+
+<body>
+    {{ partial "masthead.html" . }}
+    {{ partial "hero.html" . }}
+    {{ partial "pipeline-awards-showcase.html" . }}
+    {{ partial "content.html" . }}
+    {{ partial "footer.html" . }}
+    <script src="{{ printf "%s?v=3" ("js/pipeline-awards.js" | relURL) }}"></script>
+</body>
+
+</html>

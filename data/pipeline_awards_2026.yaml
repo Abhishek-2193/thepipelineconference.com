@@ -1,8 +1,7 @@
 # 2026 Pipeline Project of the Year nominees.
-# Replace vote_url with the Google Form, and replace each video_id
-# when the nomination videos are ready.
+# Replace each video_id when the nomination videos are ready.
 category: Pipeline Project of the Year
-vote_url: "https://forms.gle/"
+vote_url: "https://docs.google.com/forms/d/e/1FAIpQLSeC-4NVa2Cj4P91XFWaB-4qGXzRqxisEsLIsA9BsNzzxX5UQg/viewform?usp=dialog"
 nominees:
   - id: nominee-1
     title: Hybrid runtime environments
@@ -27,7 +26,7 @@ nominees:
     contributors: Tzung-da Tsai, Jonghwan Hwang, Dan Ziegler, Lillia Lai, and Manuel Agost Garcia, Sony Pictures Imageworks
     image: /images/awards/kpop-unreal.jpg
     image_alt: A KPop Demon Hunters layout scene open in Maya beside the same shot in Unreal Engine.
-    video_id: 6xbxA8tnlbY
+    video_id: Zz-24bTI8ZQ
     writeup: |
       Moving visualization to Unreal Engine let artists see their changes instantly, and the improved rendering helped directors make decisions faster.
 

@@ -109,7 +109,7 @@ online_events:
 # Who TPC is for, and the case for two mornings off (Michael Herrera's feedback, Oct 2026).
 the_case:
   eyebrow: "Who it's for"
-  heading: "Two deeply rewarding half-days of Pipeline content"
+  heading: "Two deeply rewarding mornings of Pipeline content"
   intro: "TPC is for the people who build and run production pipelines: pipeline engineers and developers, technical directors and technical artists, and the R&D, infrastructure and production technology teams behind animation, VFX, games and real-time media. Students and people new to the industry are just as welcome. This is where you meet the people doing the work."
   image: "/uploads/2026/07/siggraph/pipeline-bof-2026-room.webp"
   image_alt: "A full room of pipeline professionals at one of the DPPA's Birds of a Feather sessions at SIGGRAPH 2026."

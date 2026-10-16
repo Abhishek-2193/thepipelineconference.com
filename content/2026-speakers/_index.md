@@ -10,34 +10,38 @@ Our two free online half-days are **The Agentic Pipeline** on Tuesday 20 October
 
 ### The Agentic Pipeline — half-day one
 
-**Tuesday 20 October 2026 · 9:00am – 12:00pm Pacific Time**
+**Tuesday 20 October 2026 · 9:00am – 12:00pm Pacific Time**  
 **Online · Free to attend · Recorded**
 
-**Keynote — [Hanno Basse](https://www.linkedin.com/in/hannobasse/)**
+{{< speaker-grid ids="hanno-basse, bert-van-brande, fermi-perumal, cyrus-rahgoshay" >}}
+
+**Keynote — [Hanno Basse](https://www.linkedin.com/in/hannobasse/) — CTO at SPVCE.ai; former CTO of Digital Domain, Stability AI, Microsoft Azure Media & Entertainment and 20th Century Fox**  
 This keynote deconstructs generative models from the pixel up, exposing why their built-in limitations require us to move control out of the prompt and back into our own pipelines.
 
-**[Bert Van Brande](https://www.linkedin.com/in/bertvanbrande/) and [Fermi Perumal](https://www.linkedin.com/in/fermiperumal/) — Stellar Creative Labs, Vancouver**
-Stellar Creative Labs, a Vancouver-based animation studio, walks through the process and the journey of developing governance, controls and artist-centric AI workflows — embedding generative workflows directly into established creative production pipelines. Together, these applications help artists retain control over asset creation, rights management and model behaviour.
+**[Bert Van Brande](https://www.linkedin.com/in/bertvanbrande/) and [Fermi Perumal](https://www.linkedin.com/in/fermiperumal/) — Stellar Creative Lab, Vancouver**  
+Stellar Creative Lab, a Vancouver-based animation studio, walks through the process and the journey of developing governance, controls and artist-centric AI workflows — embedding generative workflows directly into established creative production pipelines. Together, these applications help artists retain control over asset creation, rights management and model behaviour.
 
-**[Cyrus Rahgoshay](https://www.linkedin.com/in/cyrusrahgoshay/) — Autodesk (previously Ubisoft)**
-*From Brief to Scene: Agentic AI for Asset Production at Ubisoft*
-While generative AI often focuses on generating raw media, the biggest production bottlenecks lie in the operational overhead surrounding game and film pipelines. This presentation introduces an agentic AI framework which embeds autonomous agents directly into standard 3D software to translate creative briefs into production-ready scenes. By automating scene assembly, pipeline validation and asset handoffs, the architecture shifts AI from an unpredictable generator into an integrated engine for studio-scale efficiency.
+**[Cyrus Rahgoshay](https://www.linkedin.com/in/cyrusrahgoshay/) — Autodesk (previously Ubisoft)**  
+*From Brief to Scene: Agentic AI for Asset Production at Ubisoft*  
+While generative AI often focuses on generating raw media, the biggest production bottlenecks lie in the operational overhead surrounding game and film pipelines. This presentation introduces an agentic AI framework which embeds autonomous agents directly into standard 3D software to translate creative briefs into production-ready scenes. By automating scene assembly, pipeline validation and asset handoffs, the architecture shifts AI from an unpredictable generator into an integrated engine for studio-scale efficiency.  
 [Read the paper](https://dl.acm.org/doi/10.1145/3819990.3820033)
 
 ### Core Pipeline Services — half-day two
 
-**Tuesday 27 October 2026 · 9:00am – 12:00pm Pacific Time**
+**Tuesday 27 October 2026 · 9:00am – 12:00pm Pacific Time**  
 **Online · Free to attend · Recorded**
 
-**[Dan Englesson](https://www.linkedin.com/in/dan-englesson-b07407354/) — previously Head of Pipeline at Goodbye Kansas, and at Pixar**
-*Roadmap & Strategy to Accelerate OpenUSD Adoption within Pipelines*
+{{< speaker-grid ids="dan-englesson, alan-mcseveney, cole-pearsall" >}}
+
+**[Dan Englesson](https://www.linkedin.com/in/dan-englesson-b07407354/) — Founder, Hugin Studios; previously Head of Pipeline at Goodbye Kansas, and at Pixar**  
+*Roadmap & Strategy to Accelerate OpenUSD Adoption within Pipelines*  
 A structured, four-stage engagement that moves teams from initial evaluation to full production readiness. It opens with focused pipeline discovery and strategic roadmapping, then builds, converts assets and integrates OpenUSD directly into live production workflows. The objective is to leave studios able to independently maintain and scale their own unified 3D pipeline.
 
-**[Alan McSeveney](https://www.linkedin.com/in/alanmcseveney/) — previously CTO at Preymaker and Head of Technology at The Mill**
+**[Alan McSeveney](https://www.linkedin.com/in/alanmcseveney/) — Field CTO, WEKA; previously CTO at Preymaker and Head of Technology at The Mill**  
 Alan McSeveney, a veteran technologist, co-founded the entirely cloud-native studio Preymaker and spent over a decade leading technology at The Mill. He shares how unifying studio storage into a single high-performance architecture eliminates data bottlenecks across complex VFX rendering, real-time playback and cloud-bursting pipelines. Drawing on his deep studio background, Alan demonstrates how removing those I/O limits enables production teams to scale traditional visual effects while seamlessly preparing their infrastructure for next-generation generative AI workloads.
 
-**[Cole Pearsall](https://www.linkedin.com/in/cole-pearsall/) — Founder & CEO at Symbiote**
-*Introducing Agentic Workflows into Core Pipeline Automation & Governance*
+**[Cole Pearsall](https://www.linkedin.com/in/cole-pearsall/) — Founder & CEO at Symbiote**  
+*Introducing Agentic Workflows into Core Pipeline Automation & Governance*  
 Bringing an agentic QC capability to life means shifting from rigid, hardcoded scripts to a secure multi-agent architecture grounded in studio-specific knowledge. By pairing specialised AI agents with lightweight local proxies, studios can run complex DCC checks and scene evaluations directly on artist workstations without exposing proprietary data. The approach automates tedious layout-to-animation handoffs in seconds, delivering clear, evidence-based pass/fail reports, and scales across other pipeline bottlenecks.
 
 ---

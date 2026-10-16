@@ -18,12 +18,20 @@
                     <p class="event-card-sub">{{ $event.subtitle }}</p>
                     <p class="event-card-meta"><strong>When</strong> {{ if $event.date_tba }}<span class="tba">Date TBA</span>{{ else }}{{ $event.date }}{{ end }}</p>
                     <p class="event-card-meta"><strong>Format</strong> {{ $event.format }}</p>
+                    {{ if not $event.speaker_ids }}
                     <p class="event-card-meta"><strong>Speakers</strong> {{ if $event.speakers_tba }}<span class="tba">To be announced</span>{{ else }}{{ $event.speakers }}{{ end }}</p>
+                    {{ end }}
                     {{ with $event.cost }}<p class="event-card-meta"><strong>Cost</strong> <span class="pill">{{ . }}</span></p>{{ end }}
+                    {{ with $event.speaker_ids }}
+                    <div class="event-card-speakers">
+                        <p class="event-card-meta"><strong>Speakers</strong></p>
+                        {{ partial "speaker-rows.html" (dict "items" . "size" "sm") }}
+                    </div>
+                    {{ end }}
                     <p class="event-card-body">{{ $event.body | safeHTML }}</p>
                     <div class="event-card-foot">
                         {{ if $event.cta_url }}
-                        <a class="btn {{ if eq (default "cyan" $event.accent) "amber" }}btn-accent{{ else }}btn-transparent{{ end }}" href="{{ $event.cta_url }}"{{ if hasPrefix $event.cta_url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ default "Register free" $event.cta_text }}</a>
+                        <a class="btn {{ with $event.cta_style }}{{ . }}{{ else }}{{ if eq (default "cyan" $event.accent) "amber" }}btn-accent{{ else }}btn-transparent{{ end }}{{ end }}" href="{{ $event.cta_url }}"{{ if hasPrefix $event.cta_url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ default "Register free" $event.cta_text }}</a>
                         {{ else }}
                         <span class="tba">{{ default "Registration opens soon" $event.cta_pending }}</span>
                         {{ end }}

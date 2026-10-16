@@ -25,7 +25,7 @@
           {{ with $day.format }}<p class="prog-day-format">{{ . }}</p>{{ end }}
           <div class="prog-day-cta">
             {{ if $day.cta_url }}
-            <a class="btn {{ if eq $accent "amber" }}btn-accent{{ else }}btn-transparent{{ end }}" href="{{ $day.cta_url }}"{{ if hasPrefix $day.cta_url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ default "Register free" $day.cta_text }}</a>
+            <a class="btn {{ with $day.cta_style }}{{ . }}{{ else }}{{ if eq $accent "amber" }}btn-accent{{ else }}btn-transparent{{ end }}{{ end }}" href="{{ $day.cta_url }}"{{ if hasPrefix $day.cta_url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ default "Register free" $day.cta_text }}</a>
             {{ else }}
             <span class="tba">{{ default "Registration opens soon" $day.cta_pending }}</span>
             {{ end }}
@@ -49,6 +49,11 @@
           </div>
           <div class="prog-session-main">
             {{ with $s.title }}<h4 class="prog-session-title">{{ . }}</h4>{{ end }}
+            {{ $ids := slice }}
+            {{ range $s.speakers }}{{ with .id }}{{ $ids = $ids | append . }}{{ end }}{{ end }}
+            {{ if $ids }}
+            {{ partial "speaker-rows.html" (dict "items" $ids "size" "md") }}
+            {{ else }}
             {{ with $s.speakers }}
             <p class="prog-session-people{{ if not $s.title }} prog-session-people--lead{{ end }}">
               {{- range $n, $p := . -}}
@@ -62,6 +67,7 @@
             </p>
             {{ end }}
             {{ with $s.org }}<p class="prog-session-org">{{ . | safeHTML }}</p>{{ end }}
+            {{ end }}
             {{ with $s.abstract }}<p class="prog-session-abstract">{{ . | safeHTML }}</p>{{ end }}
             {{ with $s.links }}
             <p class="prog-session-links">

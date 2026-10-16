@@ -1,0 +1,20 @@
+{{/* Headshot grid for the speakers page: {{< speaker-grid ids="hanno-basse, dan-englesson" >}}
+     Speakers come from data/tpc2026_speakers.yaml. */}}
+{{ $data := site.Data.tpc2026_speakers }}
+<ul class="team-grid speaker-grid">
+  {{ range split (.Get "ids") "," }}
+  {{ $id := trim . " " }}
+  {{ with index $data $id }}
+  {{ $s := . }}
+  <li class="team-card">
+    {{ partial "speaker-avatar.html" (dict "s" $s "class" "team-photo" "alt" $s.name) }}
+    <p class="team-name">{{ if $s.url }}<a href="{{ $s.url }}" target="_blank" rel="noopener noreferrer">{{ $s.name }}</a>{{ else }}{{ $s.name }}{{ end }}</p>
+    {{ with $s.role }}<p class="team-role">{{ . | safeHTML }}</p>{{ end }}
+    {{ with $s.previously }}<p class="team-org">{{ . }}</p>{{ end }}
+    {{ with $s.credits }}<p class="team-org team-org--credits">{{ delimit . " · " }}</p>{{ end }}
+  </li>
+  {{ else }}
+  {{ errorf "speaker-grid: no speaker %q in data/tpc2026_speakers.yaml" $id }}
+  {{ end }}
+  {{ end }}
+</ul>

@@ -1,0 +1,4 @@
+{{/* A row of buttons from a front-matter list of {text, url, style}. External links open in a new tab. */}}
+{{ range . }}
+<a class="btn {{ default "btn-accent" .style }}" href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .text }}</a>
+{{ end }}

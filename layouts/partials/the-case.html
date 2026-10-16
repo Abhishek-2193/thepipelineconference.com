@@ -1,0 +1,28 @@
+{{/* Who TPC is for, and the case for taking two mornings off to attend.
+     Content comes from the_case in the home page front matter. */}}
+{{ with .Params.the_case }}
+<section class="the-case" id="who-its-for" aria-label="Who TPC is for">
+  <div class="container the-case-inner">
+    <div class="the-case-who">
+      {{ with .eyebrow }}<span class="tpc-eyebrow">{{ . }}</span>{{ end }}
+      {{ with .heading }}<h2 class="the-case-title">{{ . }}</h2>{{ end }}
+      {{ with .intro }}<p class="the-case-intro">{{ . | safeHTML }}</p>{{ end }}
+      {{ with .image }}
+      {{ $src := . | relURL }}
+      {{ with resources.Get (strings.TrimPrefix "/" .) }}{{ $src = .RelPermalink }}{{ end }}
+      <figure class="the-case-figure">
+        <img src="{{ $src }}" alt="{{ $.Params.the_case.image_alt }}" width="1440" height="900" loading="lazy" />
+        {{ with $.Params.the_case.image_caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+      </figure>
+      {{ end }}
+    </div>
+    <div class="the-case-panel">
+      {{ with .panel_heading }}<h3 class="the-case-panel-title">{{ . }}</h3>{{ end }}
+      <ol class="the-case-points">
+        {{ range .points }}<li><strong>{{ .title }}</strong> {{ .body | safeHTML }}</li>{{ end }}
+      </ol>
+      {{ with .buttons }}<div class="the-case-cta">{{ partial "buttons.html" . }}</div>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

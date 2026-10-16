@@ -527,3 +527,118 @@ code { font-family: var(--font-mono); }
 @media (max-width: 420px) {
     .team-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ==========================================================================
+   Oct 2026 refresh: speakers up front (Michael Herrera's feedback)
+   ========================================================================== */
+
+/* ---- speaker rows: home event cards and the schedule ---- */
+.speaker-rows { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+.speaker-row { display: flex; gap: 14px; align-items: flex-start; }
+.speaker-avatar {
+    flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%; object-fit: cover;
+    background: var(--color-bg-raise); border: 2px solid var(--color-hairline);
+}
+.speaker-rows--md .speaker-avatar { width: 76px; height: 76px; }
+.speaker-avatar--initials {
+    display: inline-flex; align-items: center; justify-content: center;
+    font-family: var(--font-display); font-weight: 700; font-size: 17px; color: var(--color-muted);
+}
+.speaker-rows--md .speaker-avatar--initials { font-size: 24px; }
+.speaker-text { min-width: 0; }
+.speaker-text p { margin: 0; }
+.speaker-name { font-family: var(--font-display); font-size: 1.02rem; font-weight: 700; line-height: 1.3; color: var(--color-ink); }
+.speaker-rows--md .speaker-name { font-size: 1.2rem; }
+.speaker-name a { color: var(--color-ink); }
+.speaker-name a:hover { color: var(--color-cyan); }
+.speaker-tag {
+    display: inline-block; font-family: var(--font-mono); font-size: 9px; font-weight: 600; letter-spacing: .14em;
+    text-transform: uppercase; color: #1b2027; background: var(--color-amber); border-radius: 999px;
+    padding: 2px 8px; margin-left: 4px; vertical-align: 2px;
+}
+.speaker-text .speaker-role { font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: .05em; line-height: 1.5; color: var(--color-cyan); margin-top: 3px; }
+.speaker-role a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.speaker-text .speaker-prev { color: var(--color-body); font-size: .88rem; line-height: 1.5; margin-top: 4px; }
+.speaker-text .speaker-credits { color: var(--color-muted); font-size: .82rem; line-height: 1.5; margin-top: 3px; }
+.event-card--amber .speaker-text .speaker-role { color: var(--color-amber); }
+.prog-day--amber .speaker-text .speaker-role { color: var(--color-amber); }
+.prog-day--green .speaker-text .speaker-role { color: var(--spectrum-green); }
+.event-card-speakers { margin: 18px 0 0; padding: 16px 0 18px; border-top: 1px solid var(--color-hairline); border-bottom: 1px solid var(--color-hairline); }
+.event-card-speakers > .event-card-meta { margin-bottom: 14px; }
+.prog-session-title + .speaker-rows { margin-top: 14px; }
+
+/* ---- hero: the line-up as a row of faces ---- */
+.banner-faces { margin: 28px 0 0; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.banner-faces-row { display: inline-flex; padding-left: 10px; }
+.banner-face {
+    width: 48px; height: 48px; border-radius: 50%; object-fit: cover; margin-left: -10px;
+    border: 2px solid var(--color-bg); background: var(--color-bg-raise); transition: transform .2s;
+}
+.banner-faces-row:hover .banner-face { transform: translateY(-2px); }
+.banner-faces-caption { font-family: var(--font-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--color-body); margin: 0; }
+.banner-faces-caption a { color: var(--color-cyan); }
+
+/* ---- keynote spotlight ---- */
+.keynote { background: linear-gradient(180deg, #151a20 0%, var(--color-bg) 100%); padding: 66px 0 62px; }
+.keynote-inner { display: grid; grid-template-columns: 250px 1fr; gap: 52px; align-items: center; }
+.keynote-photo {
+    display: block; width: 250px; height: 250px; border-radius: 50%; object-fit: cover;
+    border: 5px solid transparent;
+    background: linear-gradient(var(--color-bg), var(--color-bg)) padding-box, var(--gradient-spectrum) border-box;
+}
+.keynote-eyebrow { display: block; margin-bottom: 10px; }
+.keynote-name { font-size: 2.7em; font-weight: 800; line-height: 1.05; letter-spacing: -.015em; margin: 0; color: var(--color-ink); }
+.keynote-name a { color: inherit; }
+.keynote-name a:hover { color: var(--color-cyan); }
+.keynote-role { font-family: var(--font-mono); font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--color-cyan); margin: 10px 0 0; }
+.keynote-creds { list-style: none; margin: 18px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.keynote-creds li { position: relative; padding-left: 22px; color: var(--color-body); line-height: 1.55; }
+.keynote-creds li::before { content: ""; position: absolute; left: 0; top: .66em; width: 11px; height: 3px; border-radius: 2px; background: var(--color-amber); }
+.keynote-hook { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; line-height: 1.3; color: var(--color-ink); margin: 26px 0 0; max-width: 680px; }
+.keynote-body { color: var(--color-body); line-height: 1.75; margin: 10px 0 0; max-width: 680px; }
+.keynote-cta { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ---- who it's for / making the case ---- */
+.the-case { background: #151a20; border-top: 1px solid var(--color-hairline); border-bottom: 1px solid var(--color-hairline); padding: 68px 0 72px; }
+.the-case-inner { display: grid; grid-template-columns: 1fr 1.15fr; gap: 52px; align-items: start; }
+.the-case-who .tpc-eyebrow { display: block; margin-bottom: 10px; }
+.the-case-title { font-size: 2.1em; font-weight: 800; line-height: 1.15; letter-spacing: -.01em; color: var(--color-ink); margin: 0 0 16px; }
+.the-case-intro { color: var(--color-body); font-size: 1.05em; line-height: 1.75; margin: 0; }
+.the-case-panel {
+    position: relative; overflow: hidden; background: var(--color-bg-panel);
+    border: 1px solid var(--color-hairline); border-radius: var(--radius-lg); padding: 30px 30px 30px;
+}
+.the-case-panel::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--gradient-spectrum); }
+.the-case-panel-title { font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--color-amber); margin: 0 0 18px; }
+.the-case-points { list-style: none; counter-reset: case; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+.the-case-points li { counter-increment: case; position: relative; padding-left: 40px; color: var(--color-body); line-height: 1.65; }
+.the-case-points li::before { content: counter(case, decimal-leading-zero); position: absolute; left: 0; top: 3px; font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--color-cyan); }
+.the-case-points strong { display: block; color: var(--color-ink); font-family: var(--font-display); font-size: 1.06rem; margin-bottom: 2px; }
+.the-case-cta { margin-top: 26px; display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ---- speakers page grid (inside .content-block, so it needs the extra specificity) ---- */
+.content-block .speaker-grid { margin: 24px 0 34px; line-height: normal; }
+.content-block .speaker-grid p { font-size: inherit; line-height: inherit; color: inherit; margin: 0; }
+.content-block .speaker-grid .team-name { font-size: 1rem; line-height: 1.25; color: var(--color-ink); }
+.content-block .speaker-grid .team-name a { color: var(--color-ink); }
+.content-block .speaker-grid .team-name a:hover { color: var(--color-cyan); }
+.content-block .speaker-grid .team-role { font-size: 10px; line-height: 1.5; color: var(--color-cyan); margin-top: 5px; }
+.content-block .speaker-grid .team-org { font-size: .84rem; line-height: 1.45; color: var(--color-muted); margin-top: 5px; }
+.content-block .speaker-grid .team-org--credits { color: var(--color-faint); margin-top: 3px; }
+
+@media (max-width: 900px) {
+    .keynote { padding: 48px 0 46px; }
+    .keynote-inner { grid-template-columns: 1fr; gap: 24px; }
+    .keynote-photo { width: 168px; height: 168px; }
+    .keynote-name { font-size: 2.1em; }
+    .keynote-hook { font-size: 1.2rem; }
+    .the-case { padding: 52px 0 56px; }
+    .the-case-inner { grid-template-columns: 1fr; gap: 28px; }
+    .the-case-title { font-size: 1.75em; }
+    .the-case-panel { padding: 26px 22px 24px; }
+    .banner-face { width: 40px; height: 40px; }
+    .speaker-rows--md .speaker-avatar { width: 60px; height: 60px; }
+}
+.the-case-figure { margin: 28px 0 0; }
+.the-case-figure img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; border-radius: var(--radius-lg); border: 1px solid var(--color-hairline); }
+.the-case-figure figcaption { font-family: var(--font-mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--color-muted); margin-top: 10px; }

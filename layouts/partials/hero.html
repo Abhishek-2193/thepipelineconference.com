@@ -31,6 +31,14 @@
                     <a class="btn {{ default "btn-accent" .style }}" href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .text }}</a>
                     {{ end }}
                 </div>
+                {{ with .Params.hero_speakers }}
+                <div class="banner-faces">
+                    <a class="banner-faces-row" href="{{ default "#events" .link }}" aria-label="Meet the speakers">
+                        {{ range .ids }}{{ with index site.Data.tpc2026_speakers . }}{{ partial "speaker-avatar.html" (dict "s" . "class" "banner-face" "alt" .name) }}{{ end }}{{ end }}
+                    </a>
+                    {{ with .caption }}<p class="banner-faces-caption">{{ . | safeHTML }}</p>{{ end }}
+                </div>
+                {{ end }}
             </div>
             {{ else }}
             <h1 class="banner-title">{{ .Title }}</h1>

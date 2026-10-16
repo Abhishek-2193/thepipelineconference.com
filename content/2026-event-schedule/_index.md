@@ -58,10 +58,7 @@ programme:
         - title: "Introducing Agentic Workflows into Core Pipeline Automation & Governance"
           speakers:
             - id: "cole-pearsall"
-          abstract: "Cole Pearsall is the founder and CEO of Symbiote, which builds connective infrastructure for creative pipelines, bringing multi-agent AI to animation, VFX, games and real-time production. At DigiPro 2026 he and the Symbiote team showed a multi-agent system that takes the layout-to-animation QC check from roughly 30 minutes a shot to about 27 seconds, at around ten cents of inference per run. Bringing an agentic QC capability to life means shifting from rigid, hardcoded scripts to a secure multi-agent architecture grounded in studio-specific knowledge. By pairing specialised AI agents with lightweight local proxies, studios can run complex DCC checks and scene evaluations directly on artist workstations without exposing proprietary data. The approach automates tedious layout-to-animation handoffs in seconds, delivering clear, evidence-based pass/fail reports, and scales across other pipeline bottlenecks."
-          links:
-            - text: "Read the DigiPro 2026 paper"
-              url: "https://doi.org/10.1145/3819990.3820032"
+          abstract: "Cole Pearsall is a Forbes 30 Under 30 serial founder who co-founded and scaled Acid League and Proxies before turning to film and game production. At Symbiote he is building an intelligence layer for animation, VFX and games pipelines: AI orchestration tools, developed with studio partners, that take the friction out of complex production workflows so artists and pipeline teams can work more intuitively. Bringing an agentic QC capability to life means shifting from rigid, hardcoded scripts to a secure multi-agent architecture grounded in studio-specific knowledge. By pairing specialised AI agents with lightweight local proxies, studios can run complex DCC checks and scene evaluations directly on artist workstations without exposing proprietary data. The approach automates tedious layout-to-animation handoffs in seconds, delivering clear, evidence-based pass/fail reports, and scales across other pipeline bottlenecks."
 
     - eyebrow: "October 2026"
       title: "DPPA Online Speaker Series"

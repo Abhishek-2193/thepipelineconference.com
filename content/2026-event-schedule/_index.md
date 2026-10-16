@@ -7,7 +7,7 @@ author: "Fran"
 programme:
   eyebrow: "TPC 2026 · Online · Free to attend"
   heading: "The 2026 online programme"
-  intro: 'TPC 2026 moved online from Vancouver, so this year anyone can join from anywhere. The programme our volunteers built runs as two free half-days in October, followed by the tenth Pipeline Awards in December. Every talk ends in live Q&A, and sessions are recorded where speakers agree and published on <a href="https://www.youtube.com/@ThePipelineConference">The Pipeline Conference YouTube channel</a>.'
+  intro: 'TPC 2026 moved online from Vancouver, so this year anyone can join from anywhere. The programme our volunteers built runs as two free half-days in October, followed by the tenth Pipeline Awards in December. Every talk ends in live Q&A, and every session is recorded and published on <a href="https://www.youtube.com/@ThePipelineConference">The Pipeline Conference YouTube channel</a>.'
   days:
     - eyebrow: "Half-day one"
       title: "The Agentic Pipeline"
@@ -58,7 +58,10 @@ programme:
         - title: "Introducing Agentic Workflows into Core Pipeline Automation & Governance"
           speakers:
             - id: "cole-pearsall"
-          abstract: "Bringing an agentic QC capability to life means shifting from rigid, hardcoded scripts to a secure multi-agent architecture grounded in studio-specific knowledge. By pairing specialised AI agents with lightweight local proxies, studios can run complex DCC checks and scene evaluations directly on artist workstations without exposing proprietary data. The approach automates tedious layout-to-animation handoffs in seconds, delivering clear, evidence-based pass/fail reports, and scales across other pipeline bottlenecks."
+          abstract: "Cole Pearsall is the founder and CEO of Symbiote, which builds connective infrastructure for creative pipelines, bringing multi-agent AI to animation, VFX, games and real-time production. At DigiPro 2026 he and the Symbiote team showed a multi-agent system that takes the layout-to-animation QC check from roughly 30 minutes a shot to about 27 seconds, at around ten cents of inference per run. Bringing an agentic QC capability to life means shifting from rigid, hardcoded scripts to a secure multi-agent architecture grounded in studio-specific knowledge. By pairing specialised AI agents with lightweight local proxies, studios can run complex DCC checks and scene evaluations directly on artist workstations without exposing proprietary data. The approach automates tedious layout-to-animation handoffs in seconds, delivering clear, evidence-based pass/fail reports, and scales across other pipeline bottlenecks."
+          links:
+            - text: "Read the DigiPro 2026 paper"
+              url: "https://doi.org/10.1145/3819990.3820032"
 
     - eyebrow: "October 2026"
       title: "DPPA Online Speaker Series"

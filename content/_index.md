@@ -109,21 +109,21 @@ online_events:
 # Who TPC is for, and the case for two mornings off (Michael Herrera's feedback, Oct 2026).
 the_case:
   eyebrow: "Who it's for"
-  heading: "Worth two mornings of your week"
+  heading: "Two deeply rewarding half-days of Pipeline content"
   intro: "TPC is for the people who build and run production pipelines: pipeline engineers and developers, technical directors and technical artists, and the R&D, infrastructure and production technology teams behind animation, VFX, games and real-time media. Students and people new to the industry are just as welcome. This is where you meet the people doing the work."
   image: "/uploads/2026/07/siggraph/pipeline-bof-2026-room.webp"
   image_alt: "A full room of pipeline professionals at one of the DPPA's Birds of a Feather sessions at SIGGRAPH 2026."
-  image_caption: "A full room at one of our pipeline Birds of a Feather sessions, SIGGRAPH 2026."
+  image_caption: "A full house at one of our pipeline Birds of a Feather sessions, SIGGRAPH 2026."
   panel_heading: "Making the case to your manager"
   points:
     - title: "No travel, no ticket"
       body: "Two three-hour mornings, online and free. The only cost is your time."
     - title: "Ideas you can use on Monday"
       body: "How to keep generative models under pipeline control, a staged roadmap to OpenUSD, taking storage I/O off the critical path, and agentic QC that never sends studio data off the workstation."
-    - title: "Direct access to people who have done it"
+    - title: "Direct access to thought leaders in the industry"
       body: "Every talk ends in live Q&A with speakers who built pipelines at Digital Domain, Stability AI, Pixar, Ubisoft, Sony Pictures Imageworks and The Mill."
     - title: "It reaches the whole team"
-      body: "Talks are recorded for the TPC YouTube channel where speakers agree, and the discussion carries on in our <a href=\"https://discord.gg/PU8hygUfbf\">Discord</a>, so what you learn travels back to your studio."
+      body: "Talks are recorded for the TPC YouTube channel, and the discussion carries on in our <a href=\"https://discord.gg/PU8hygUfbf\">Discord</a>, so what you learn travels back to your studio."
   buttons:
     - text: "Register · Tue 20 Oct"
       url: "https://luma.com/9kqv63oh"

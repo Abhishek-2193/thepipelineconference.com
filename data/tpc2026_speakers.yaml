@@ -61,7 +61,8 @@ cole-pearsall:
   name: "Cole Pearsall"
   url: "https://www.linkedin.com/in/cole-pearsall/"
   role: "Founder & CEO, Symbiote"
-  credits: ["Forbes 30 Under 30"]
+  previously: "His team's DigiPro 2026 paper cut layout-to-animation QC from 30 minutes a shot to 27 seconds"
+  credits: ["Forbes 30 Under 30", "DigiPro 2026 speaker"]
   photo: "/uploads/2026/10/speakers/cole-pearsall.webp"
 
 alex-hughes:

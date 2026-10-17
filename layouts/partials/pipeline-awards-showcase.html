@@ -42,8 +42,18 @@
                 </div>
             </article>
             {{ end }}
+
+            <div class="awards-carousel">
+                <button type="button" class="btn awards-explore" data-awards-explore>Explore Projects</button>
+                <div class="awards-carousel-nav" data-awards-nav hidden>
+                    <button type="button" class="awards-carousel-btn" data-awards-prev>Previous</button>
+                    <p class="awards-carousel-status" data-awards-status></p>
+                    <button type="button" class="awards-carousel-btn" data-awards-next>Next</button>
+                </div>
+            </div>
         </div>
 
+        <h2 class="awards-grid-title" id="awards-nominees-title">2026 Pipeline Project Nominees</h2>
         <div class="awards-grid" data-awards-grid>
             {{ $rules := slice "cyan" "amber" "purple" "green" "orange" }}
             {{ range $index, $nominee := $awards.nominees }}

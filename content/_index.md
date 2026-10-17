@@ -4,11 +4,6 @@ date: 2019-02-20T16:11:19
 author: "Fran"
 banner_tagline: "To promote, elevate and evolve VFX/CG pipelines"
 
-# The in-person conference is off. Keep this block until it is no longer news.
-cancelled_event:
-  flag: "Cancelled"
-  what: "In person · BCIT Vancouver · Thursday 17 September 2026"
-
 event_location: "TPC 2026 is now online"
 event_address: "Free to attend, from anywhere"
 event_date: "Two free half-days · 20 and 27 October 2026"
@@ -23,12 +18,6 @@ banner_buttons:
   - text: "Get the announcements"
     url: "https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv"
     style: "btn-transparent"
-
-status_notice:
-  show: true
-  flag: "Change of plan"
-  title: "The in-person conference on Thursday 17 September 2026 has been cancelled."
-  body: 'The Pipeline Conference will not take place at BCIT in Vancouver as planned. Rather than lose a year of programme work, TPC 2026 is moving online! Because we are no longer paying for a room in one city, it is free to attend from anywhere. If you bought a ticket you have been refunded in full and automatically. <a href="/2026-event-schedule/">See what is happening instead</a>.'
 
 online_events:
   eyebrow: "TPC 2026 · Online · Free"

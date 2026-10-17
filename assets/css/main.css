@@ -216,7 +216,7 @@ img { max-width: 100%; display: block; }
 .events-2026-head .tpc-eyebrow { display: block; margin-bottom: 10px; }
 .events-2026-title { font-size: 2.3em; font-weight: 800; margin: 0 0 14px; letter-spacing: -.01em; }
 .events-2026-intro { color: var(--color-body); font-size: 1.05em; line-height: 1.75; margin: 0; }
-.events-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; align-items: stretch; }
+.events-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; align-items: stretch; }
 .event-card {
     display: flex; flex-direction: column; background: var(--color-bg-panel);
     border: 1px solid var(--color-hairline); border-radius: var(--radius-lg);
@@ -642,3 +642,36 @@ code { font-family: var(--font-mono); }
 .the-case-figure { margin: 28px 0 0; }
 .the-case-figure img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; border-radius: var(--radius-lg); border: 1px solid var(--color-hairline); }
 .the-case-figure figcaption { font-family: var(--font-mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--color-muted); margin-top: 10px; }
+
+/* ---- 20 October: Speaker Series kickoff on equal footing (Oct 2026) ---- */
+.event-card--green .event-card-rule { background: linear-gradient(90deg, var(--spectrum-green), var(--spectrum-cyan)); }
+.event-card--green .event-card-eyebrow { color: var(--spectrum-green); }
+.event-card--green .speaker-text .speaker-role { color: var(--spectrum-green); }
+
+.sponsor-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 0; }
+.sponsor-line-label { font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--color-muted); }
+.sponsor-line-logo { display: inline-flex; line-height: 0; }
+.sponsor-line-logo img { height: 24px; width: auto; display: block; }
+.sponsor-line-tagline { color: var(--color-body); font-size: .9rem; }
+.event-card-sponsor { margin-top: 14px; }
+.prog-day-sponsor { margin-top: 14px; }
+.spotlight-sponsor { margin-top: 22px; padding: 14px 18px; border: 1px solid var(--color-hairline); border-radius: var(--radius-md); background: rgba(255, 255, 255, .02); }
+.spotlight-sponsor .sponsor-line-logo img { height: 30px; }
+
+.spotlights-head { margin-bottom: 44px; }
+.spotlights-head .tpc-eyebrow { display: block; margin-bottom: 10px; }
+.spotlights-title { font-size: 2.3em; font-weight: 800; line-height: 1.15; letter-spacing: -.01em; color: var(--color-ink); margin: 0; }
+.spotlights-intro { color: var(--color-body); font-size: 1.05em; line-height: 1.75; margin: 12px 0 0; max-width: 760px; }
+.spotlights .keynote-inner + .keynote-inner { margin-top: 56px; padding-top: 56px; border-top: 1px solid var(--color-hairline); }
+.keynote-inner--flip { grid-template-columns: 1fr 250px; }
+.keynote-inner--flip .keynote-media { order: 2; }
+
+@media (max-width: 1000px) {
+    .events-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 900px) {
+    .keynote-inner--flip { grid-template-columns: 1fr; }
+    .keynote-inner--flip .keynote-media { order: 0; }
+    .spotlights-title { font-size: 1.8em; }
+    .spotlights .keynote-inner + .keynote-inner { margin-top: 40px; padding-top: 40px; }
+}

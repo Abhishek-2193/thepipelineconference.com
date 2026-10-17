@@ -37,7 +37,7 @@ fermi-perumal:
 cyrus-rahgoshay:
   name: "Cyrus Rahgoshay"
   url: "https://www.linkedin.com/in/cyrusrahgoshay/"
-  role: "Senior Software Developer Manager, Autodesk"
+  role: "Senior Software Development Manager, Autodesk"
   previously: "Previously Technical Lead at Ubisoft, building its cross-studio USD pipeline"
   credits: ["DigiPro 2022 speaker"]
   photo: "/uploads/2026/10/speakers/cyrus-rahgoshay.webp"
@@ -67,5 +67,8 @@ cole-pearsall:
 
 alex-hughes:
   name: "Alex Hughes"
+  url: "https://www.linkedin.com/in/thealexhughes/"
   role: 'Senior Software Engineer, <a href="https://www.miris.com/">Miris</a>'
-  previously: "Vancouver, BC"
+  previously: "Previously founding engineer at Arch Platform Technologies and Head of Pipeline at Vitality VFX; Digital Domain and Zoic Studios before that"
+  credits: ["Creator of SEPT, open-source file naming for VFX"]
+  photo: "/uploads/2026/10/speakers/alex-hughes.webp"

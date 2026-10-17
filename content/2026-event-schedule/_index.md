@@ -7,9 +7,9 @@ author: "Fran"
 programme:
   eyebrow: "TPC 2026 · Online · Free to attend"
   heading: "The 2026 online programme"
-  intro: 'TPC 2026 moved online from Vancouver, so this year anyone can join from anywhere. The programme our volunteers built runs as two free half-days in October, followed by the tenth Pipeline Awards in December. Every talk ends in live Q&A, and every session is recorded and published on <a href="https://www.youtube.com/@ThePipelineConference">The Pipeline Conference YouTube channel</a>.'
+  intro: 'TPC 2026 moved online from Vancouver, so this year anyone can join from anywhere. The programme our volunteers built runs across two free days in October: Tuesday 20 October, morning and afternoon, with the kickoff of the DPPA Online Speaker Series after The Agentic Pipeline; and Tuesday 27 October. The tenth Pipeline Awards follow in December. Every talk ends in live Q&A, and every session is recorded and published on <a href="https://www.youtube.com/@ThePipelineConference">The Pipeline Conference YouTube channel</a>.'
   days:
-    - eyebrow: "Half-day one"
+    - eyebrow: "Tuesday 20 October · Morning"
       title: "The Agentic Pipeline"
       subtitle: "AI and agentic workflows in digital media pipelines"
       date: "Tuesday 20 October 2026"
@@ -37,7 +37,29 @@ programme:
             - text: "Read the paper"
               url: "https://dl.acm.org/doi/10.1145/3819990.3820033"
 
-    - eyebrow: "Half-day two"
+    - eyebrow: "Tuesday 20 October · Afternoon"
+      title: "Speaker Series Kickoff"
+      subtitle: "The DPPA Online Speaker Series, part of TPC 2026"
+      sponsor:
+        name: "Miris"
+        url: "https://www.miris.com/"
+        logo: "/img/miris-logo.svg"
+      date: "Tuesday 20 October 2026"
+      time: "14:00 – 15:00 Pacific Time"
+      format: "Online · Free to attend · Recorded"
+      accent: "green"
+      cta_style: "btn-accent"
+      cta_text: "Register free on Eventbrite"
+      cta_url: "https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite"
+      body: "Stay on after the morning programme. The afternoon of the 20th kicks off the DPPA Online Speaker Series with Alex Hughes of Miris, on training radiance fields at cloud scale and turning them into 3D assets that stream to any device."
+      sessions:
+        - title: "Large Scale Cloud Native Radiance Field Training for Streamable Assets"
+          speakers:
+            - id: "alex-hughes"
+          abstract: "Alex works on 3D asset streaming at internet scale. His talk covers large scale cloud native radiance field training and what it takes to turn the results into assets that stream — the training infrastructure, the cost model, and the pipeline work in between."
+      footnote: "Part of the TPC 2026 programme on Tuesday 20 October, and the first talk of the DPPA Online Speaker Series, which carries on after TPC. Proudly sponsored by Miris."
+
+    - eyebrow: "Tuesday 27 October · Morning"
       title: "Core Pipeline Services"
       subtitle: "Pipeline engineering and operations at production scale"
       date: "Tuesday 27 October 2026"
@@ -60,23 +82,6 @@ programme:
             - id: "cole-pearsall"
           abstract: "Cole Pearsall is a Forbes 30 Under 30 serial founder who co-founded and scaled Acid League and Proxies before turning to film and game production. At Symbiote he is building an intelligence layer for animation, VFX and games pipelines: AI orchestration tools, developed with studio partners, that take the friction out of complex production workflows so artists and pipeline teams can work more intuitively. Bringing an agentic QC capability to life means shifting from rigid, hardcoded scripts to a secure multi-agent architecture grounded in studio-specific knowledge. By pairing specialised AI agents with lightweight local proxies, studios can run complex DCC checks and scene evaluations directly on artist workstations without exposing proprietary data. The approach automates tedious layout-to-animation handoffs in seconds, delivering clear, evidence-based pass/fail reports, and scales across other pipeline bottlenecks."
 
-    - eyebrow: "October 2026"
-      title: "DPPA Online Speaker Series"
-      subtitle: "Proudly sponsored by Miris"
-      date: "Tuesday 20 October 2026"
-      time: "14:00 Pacific Time"
-      format: "Online · Free to attend · Recorded"
-      accent: "green"
-      cta_text: "Register on Eventbrite"
-      cta_url: "https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite"
-      body: "A one-off talk on the afternoon of our first half-day, and the one session of the three you can already register for."
-      sessions:
-        - title: "Large Scale Cloud Native Radiance Field Training for Streamable Assets"
-          speakers:
-            - id: "alex-hughes"
-          abstract: "Alex works on 3D asset streaming at internet scale. His talk covers large scale cloud native radiance field training and what it takes to turn the results into assets that stream — the training infrastructure, the cost model, and the pipeline work in between."
-      footnote: "The DPPA Online Speaker Series runs alongside the two Pipeline Conference half-days above, but separately from them."
-
     - eyebrow: "December 2026"
       title: "The Pipeline Awards Show"
       subtitle: "The tenth Pipeline Awards, as a produced show"
@@ -89,7 +94,7 @@ programme:
       body: "Our awardees' work on screen, each of them speaking directly to the audience, messages from the judges, and open rooms on Discord afterwards. Nominations are closed and our independent panel has made its decisions."
 ---
 
-Registration for both half-days is open and free — sign up on Luma for [The Agentic Pipeline](https://luma.com/9kqv63oh) and [Core Pipeline Services](https://luma.com/ofvxloqb). [Newsletter](https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv) subscribers hear about everything else first.
+Registration is open and free for all three sessions: [The Agentic Pipeline](https://luma.com/9kqv63oh) and [Core Pipeline Services](https://luma.com/ofvxloqb) on Luma, and the [Speaker Series kickoff](https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite) on Eventbrite. [Newsletter](https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv) subscribers hear about everything else first.
 
 ---
 

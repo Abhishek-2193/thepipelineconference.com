@@ -22,9 +22,10 @@
                     <p class="event-card-meta"><strong>Speakers</strong> {{ if $event.speakers_tba }}<span class="tba">To be announced</span>{{ else }}{{ $event.speakers }}{{ end }}</p>
                     {{ end }}
                     {{ with $event.cost }}<p class="event-card-meta"><strong>Cost</strong> <span class="pill">{{ . }}</span></p>{{ end }}
+                    {{ with $event.sponsor }}{{ partial "sponsor-line.html" (dict "sponsor" . "class" "event-card-sponsor") }}{{ end }}
                     {{ with $event.speaker_ids }}
                     <div class="event-card-speakers">
-                        <p class="event-card-meta"><strong>Speakers</strong></p>
+                        <p class="event-card-meta"><strong>{{ if eq (len .) 1 }}Speaker{{ else }}Speakers{{ end }}</strong></p>
                         {{ partial "speaker-rows.html" (dict "items" . "size" "sm") }}
                     </div>
                     {{ end }}

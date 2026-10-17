@@ -1,0 +1,37 @@
+{{/* Spotlights under the hero: the keynote and the Speaker Series kickoff, both on
+     Tuesday 20 October. Content comes from spotlights in the home page front matter;
+     each speaker's name, photo and role come from data/tpc2026_speakers.yaml. */}}
+{{ with .Params.spotlights }}
+{{ $sp := . }}
+<section class="keynote spotlights" id="spotlights" aria-label="{{ default "Spotlight" $sp.heading }}">
+  {{ if or $sp.eyebrow $sp.heading }}
+  <div class="container spotlights-head">
+    {{ with $sp.eyebrow }}<span class="tpc-eyebrow">{{ . }}</span>{{ end }}
+    {{ with $sp.heading }}<h2 class="spotlights-title">{{ . }}</h2>{{ end }}
+    {{ with $sp.intro }}<p class="spotlights-intro">{{ . | safeHTML }}</p>{{ end }}
+  </div>
+  {{ end }}
+  {{ range $i, $k := $sp.items }}
+  {{ with index site.Data.tpc2026_speakers $k.id }}
+  {{ $s := . }}
+  <article class="container keynote-inner{{ if eq (mod $i 2) 1 }} keynote-inner--flip{{ end }}">
+    <div class="keynote-media">
+      {{ partial "speaker-avatar.html" (dict "s" $s "class" "keynote-photo" "alt" $s.name) }}
+    </div>
+    <div class="keynote-text">
+      {{ with $k.eyebrow }}<span class="tpc-eyebrow keynote-eyebrow">{{ . }}</span>{{ end }}
+      <h3 class="keynote-name">{{ if $s.url }}<a href="{{ $s.url }}" target="_blank" rel="noopener noreferrer">{{ $s.name }}</a>{{ else }}{{ $s.name }}{{ end }}</h3>
+      {{ with $s.role }}<p class="keynote-role">{{ . | safeHTML }}</p>{{ end }}
+      {{ with $k.credentials }}<ul class="keynote-creds">{{ range . }}<li>{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
+      {{ with $k.heading }}<p class="keynote-hook">{{ . }}</p>{{ end }}
+      {{ with $k.body }}<p class="keynote-body">{{ . | safeHTML }}</p>{{ end }}
+      {{ with $k.sponsor }}{{ partial "sponsor-line.html" (dict "sponsor" . "class" "spotlight-sponsor") }}{{ end }}
+      {{ with $k.buttons }}<div class="keynote-cta">{{ partial "buttons.html" . }}</div>{{ end }}
+    </div>
+  </article>
+  {{ else }}
+  {{ errorf "spotlights: no speaker %q in data/tpc2026_speakers.yaml" $k.id }}
+  {{ end }}
+  {{ end }}
+</section>
+{{ end }}

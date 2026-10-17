@@ -35,6 +35,7 @@
         <div class="prog-day-what">
           <h3 class="prog-day-title">{{ $day.title }}</h3>
           {{ with $day.subtitle }}<p class="prog-day-sub">{{ . }}</p>{{ end }}
+          {{ with $day.sponsor }}{{ partial "sponsor-line.html" (dict "sponsor" . "class" "prog-day-sponsor") }}{{ end }}
           {{ with $day.body }}<p class="prog-day-body">{{ . | safeHTML }}</p>{{ end }}
         </div>
       </div>

@@ -4,7 +4,7 @@ date: 2022-07-02T00:00:26
 author: "Iris Hwang"
 ---
 
-## Nominations for the 2026 Pipeline Awards are now closed
+## About the Awards
 
 **The Pipeline Awards recognizes and honors the outstanding tools used in production and the individuals that further CG pipeline technologies.**
 
@@ -18,15 +18,13 @@ Thank you to everyone who put a project or a person forward. Submissions have cl
 
 The Pipeline Awards recognizes excellence in the development and integration of CG pipelines. The tools and people that save loads of time and mix creative genius with a clear grasp of how to make a laborious process easier and faster. This is why we have created the Awards. In this story, they are the hero! And we want to celebrate them and their work!
 
----
+This year's public vote is for **Pipeline Project of the Year**, honoring tools worthy of industry recognition for the benefits they have brought to one or more studios.
 
 ## Awards Categories
 
 | **Pipeline Project Award** | **Pipeline Hero Award** |
 | --- | --- |
 | Honors the tools worthy of industry recognition for the benefits they have brought to one or more studios | Honors practitioners who are worthy of recognition for contributions made to pipeline technologies |
-
----
 
 ## **History** of the Awards
 

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <rect width="400" height="250" fill="#242b34"/>
+  <g fill="#8a7ad4">
+    <circle cx="80" cy="70" r="10"/>
+    <circle cx="160" cy="70" r="10"/>
+    <circle cx="240" cy="70" r="10"/>
+    <circle cx="320" cy="70" r="10"/>
+    <circle cx="80" cy="150" r="10"/>
+    <circle cx="160" cy="150" r="10"/>
+    <circle cx="240" cy="150" r="10"/>
+    <circle cx="320" cy="150" r="10"/>
+  </g>
+  <g stroke="#6c9fd4" stroke-width="3" fill="none">
+    <path d="M80 70 H320 M80 150 H320 M80 70 V150 M160 70 V150 M240 70 V150 M320 70 V150"/>
+  </g>
+  <text x="200" y="220" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="600" fill="#4dd0e1">03</text>
+</svg>

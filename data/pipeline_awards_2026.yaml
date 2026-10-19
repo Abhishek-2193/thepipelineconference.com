@@ -1,0 +1,101 @@
+# 2026 Pipeline Project of the Year nominees.
+# Omit video_id to show the "Video coming soon" placeholder.
+category: Pipeline Project of the Year
+vote_url: "https://docs.google.com/forms/d/e/1FAIpQLSeC-4NVa2Cj4P91XFWaB-4qGXzRqxisEsLIsA9BsNzzxX5UQg/viewform?usp=dialog"
+nominees:
+  - id: nominee-1
+    title: Hybrid runtime environments
+    contributors: Federico Naum and Fabrice Macagno, Netflix Animation Studios
+    image: /images/awards/hybrid-runtime.jpg
+    image_alt: Diagram of one host running CY2021 and CY2023 environments in separate containers, with Rez as the shared package layer.
+    video_id: TsgWVvX5UeY
+    writeup: |
+      Studios often run several productions at once, each on a different software stack. Shows already underway need a locked environment, while new shows want the latest DCC applications, libraries, and VFX Reference Platform. A Linux upgrade used to mean a long migration, duplicate machines, and a delay before the studio could adopt the new platform.
+
+      Netflix Animation Studios combines Apptainer containers with Rez. A versioned container supplies the operating system and low-level libraries for one VFX Reference Platform year. Rez still manages in-house software, plugins, and production configuration. Launching an application selects the right container automatically, and artists keep the same commands.
+
+      The move from the 2021 platform to 2023 could not run on the existing operating system, and recompiling the studio’s packages was estimated at more than six months before the first artist machine could be reimaged. Productions moved onto the new hosts immediately while existing shows kept their validated stack. The system is still used every day, and 95% of studio workflows, interactive and on the farm, run inside these hybrid environments.
+    links:
+      - label: "Paper: Balancing Stability and Innovation: Hybrid Runtime Environments"
+        url: https://dl.acm.org/doi/full/10.1145/3744199.3744634
+      - label: DigiPro 2025 program
+        url: https://dp2025.digiproconf.org/program/program-a/
+
+  - id: nominee-2
+    title: Unreal Visualization Pipeline for KPOP Demon Hunters
+    contributors: Tzung-da Tsai, Jonghwan Hwang, Dan Ziegler, Lillia Lai, and Manuel Agost Garcia, Sony Pictures Imageworks
+    image: /images/awards/kpop-unreal.jpg
+    image_alt: A KPop Demon Hunters layout scene open in Maya beside the same shot in Unreal Engine.
+    video_id: Zz-24bTI8ZQ
+    writeup: |
+      Moving visualization to Unreal Engine let artists see their changes instantly, and the improved rendering helped directors make decisions faster.
+
+      Sony Pictures Imageworks built a pipeline that bridges Maya and Unreal, using USD as the interchange. Python, C++, and Blueprints handle asset management, animation, and rendering in a way that stayed familiar to visualization artists.
+
+      The pipeline was created for KPOP Demon Hunters. It is now the primary visualization pipeline for full CG productions at Imageworks, and the studio continues to improve it.
+    links:
+      - label: Reimagining Previs and Layout for KPop Demon Hunters with Unreal Engine
+        url: https://www.unrealengine.com/spotlights/reimagining-previs-and-layout-for-kpop-demon-hunters-with-unreal-engine
+
+  - id: nominee-3
+    title: LumiVid
+    contributors: Naomi Ken Korem and Mohamed Oumoumad, with Lightricks
+    image: /images/awards/lumivid.jpg
+    image_alt: LumiVid result of a garage-door plate pulled down in exposure, with cloud detail and headlight structure recovered.
+    video_id: Wa_opHruxLU
+    writeup: |
+      Generative video models output 8-bit sRGB, which is a dead end in a VFX pipeline: there is no headroom for exposure, grading, or compositing.
+
+      LumiVid converts that output into scene-linear float16 EXR with a high dynamic range, so diffusion footage can sit alongside plates and CG. The same pipeline lifts existing SDR material, including archive footage and phone captures, into HDR-ready deliverables. It maps scene-linear radiance through a cinema log curve and adapts a pretrained model with a small LoRA, rather than training a new HDR model.
+
+      The EXRs drop into Resolve and Nuke for re-exposure and color. Phone video can be lifted into a wider range, and legacy SDR footage can be remastered for HDR displays.
+    links:
+      - label: Paper
+        url: https://arxiv.org/pdf/2604.11788
+      - label: Project page
+        url: https://hdr-lumivid.github.io/
+      - label: Video model
+        url: https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-HDR
+      - label: Image model
+        url: https://huggingface.co/oumoumad/LumiPic
+      - label: GitHub
+        url: https://github.com/oumad/LumiPic
+
+  - id: nominee-4
+    title: Nitro Real-time Pipeline
+    contributors: Joe Longson (architecture lead), Jay Steele, Mark Mclaughlin, Andy Lin, Gene Lee, Christian Eisenacher, Serge Sretschinsky, Hidehiro Hirase, Noel Villegas, and Lawrence Chai, Walt Disney Animation Studios
+    image: /images/awards/nitro.jpg
+    image_alt: A production character rig in a real-time viewport, from Disney Animation’s Nitro playback work.
+    writeup: |
+      Before Nitro, Walt Disney Animation Studios had no single way to preview production assets in real time. Each file format had its own viewer. Most departments were stuck in Maya, which was slow and could not preview procedural scenes, while effects and crowds in Houdini could not be previewed without a full import. Artists often did not see what they were building until a final-frame render that could take hours.
+
+      Nitro is a real-time renderer that works inside the tools artists already use, across the studio’s asset formats. It began in 2011 for live-action-style camera reference on the Hero’s Duty sequence in Wreck-It Ralph.
+
+      It is still the studio’s primary real-time preview path, from layout and animation through crowds, effects, set dressing, and lighting. On Moana, a high-quality review mode cut renders from hours to seconds per frame.
+    links:
+      - label: "Multithreading for VFX, SIGGRAPH 2017 Course"
+        url: https://dl.acm.org/doi/10.1145/3084873.3084891
+      - label: "The Atmosphere of Raya and the Last Dragon, SIGGRAPH 2021"
+        url: https://dl.acm.org/doi/10.1145/3450623.3464676
+      - label: "Achieving Real-Time Playback with Production Rigs, SIGGRAPH 2015"
+        url: https://dl.acm.org/doi/10.1145/2775280.2792519
+      - label: "Achieving Real-Time Playback with Production Rigs, Disney Animation"
+        url: https://www.disneyanimation.com/publications/achieving-real-time-playback-with-production-rigs/
+
+  - id: nominee-5
+    title: Realtime Pipeline on Twisted
+    contributors: Benoit Lecocq, Maxime Robinot, Cedric Paille, Vincent Callède, Joachim Guerin, and François Tarlier, Dwarf Animation Studio
+    image: /images/awards/twisted.jpg
+    image_alt: Painterly hill-village still from Twisted, the DigiPro image for the real-time pipeline paper.
+    video_id: AbCCoULLNfg
+    writeup: |
+      Offline path-traced rendering took a large farm and about 35 to 60 minutes a frame. Lighting, compositing, and look development stayed cut off from early production, so late creative changes were expensive.
+
+      Dwarf Animation Studio moved previs, layout, lighting, compositing, and rendering into Unreal Engine. Artists see about 95% of the final image live, at about 20 frames per second under full lighting. Final 2K frames average under 3 seconds.
+
+      Twisted, an 80-minute feature directed by Lino DiSalvo, was delivered on a 16-month schedule and a much smaller infrastructure budget. The farm went from more than 200 offline nodes to fewer than 10 GPU nodes, and departments work in one viewport instead of handing files off.
+    links:
+      - label: "Published paper: Previs to Final Pixels"
+        url: https://doi.org/10.1145/3819990.3820025
+      - label: DigiPro program page
+        url: https://digiproconf.org/program/program-9/

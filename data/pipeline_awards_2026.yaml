@@ -67,11 +67,15 @@ nominees:
     image: /images/awards/nitro.jpg
     image_alt: A production character rig in a real-time viewport, from Disney Animation’s Nitro playback work.
     writeup: |
-      Before Nitro, Walt Disney Animation Studios had no single way to preview production assets in real time. Each file format had its own viewer. Most departments were stuck in Maya, which was slow and could not preview procedural scenes, while effects and crowds in Houdini could not be previewed without a full import. Artists often did not see what they were building until a final-frame render that could take hours.
+      At Walt Disney Animation Studios, storytelling depends on empowering artists to make creative decisions quickly and confidently.
 
-      Nitro is a real-time renderer that works inside the tools artists already use, across the studio’s asset formats. It began in 2011 for live-action-style camera reference on the Hero’s Duty sequence in Wreck-It Ralph.
+      Nitro, the studio's unified real-time pipeline, provides immediate, visually representative feedback directly within artists' DCC applications, creating a seamless creative experience throughout the filmmaking process. By removing the delay between creative intent and visual feedback, Nitro keeps artists focused on the creative process.
 
-      It is still the studio’s primary real-time preview path, from layout and animation through crowds, effects, set dressing, and lighting. On Moana, a high-quality review mode cut renders from hours to seconds per frame.
+      Since its first production use on Wreck-It Ralph in 2012, Nitro has evolved alongside the studio's filmmaking ambitions. It helped scale the massive procedural environments of Big Hero 6, enabled real-time fur visualization for Zootopia, supported large-scale environments and crowds in Moana, and advanced volumetric effects and cinematography workflows on films such as Frozen 2, Raya and the Last Dragon, Encanto, and Wish.
+
+      Today, Nitro is a core part of the studio's production pipeline, powering real-time workflows across animation, layout, lighting, effects, and crowds. Most recently on Zootopia 2, Nitro introduced real-time lens distortion visualization, enabling artists to evaluate complex lens effects while staying focused on creativity and storytelling.
+
+      Building on the stylized rendering work introduced for Wish, Nitro continues to expand its support for non-photorealistic workflows, including a stylized 2D animation-inspired viewport renderer and variable-rate animation playback. These capabilities are now helping artists explore and refine the visual style of the upcoming short Lilo & Scratch.
     links:
       - label: "Multithreading for VFX, SIGGRAPH 2017 Course"
         url: https://dl.acm.org/doi/10.1145/3084873.3084891

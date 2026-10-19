@@ -1,0 +1,25 @@
+{{/* Speaker rows: headshot, name, current role, track record and credits.
+     Pass (dict "items" LIST "size" "sm|md"). Each item is a speaker id from
+     data/tpc2026_speakers.yaml, or a map with an id and an optional tag. */}}
+{{ $data := site.Data.tpc2026_speakers }}
+<ul class="speaker-rows speaker-rows--{{ default "sm" .size }}">
+  {{ range .items }}
+  {{ $id := . }}
+  {{ $tag := "" }}
+  {{ if reflect.IsMap . }}{{ $id = .id }}{{ $tag = .tag }}{{ end }}
+  {{ with index $data $id }}
+  {{ $s := . }}
+  <li class="speaker-row">
+    {{ partial "speaker-avatar.html" (dict "s" $s "class" "speaker-avatar") }}
+    <div class="speaker-text">
+      <p class="speaker-name">{{ if $s.url }}<a href="{{ $s.url }}" target="_blank" rel="noopener noreferrer">{{ $s.name }}</a>{{ else }}{{ $s.name }}{{ end }}{{ with $tag }} <span class="speaker-tag">{{ . }}</span>{{ end }}</p>
+      {{ with $s.role }}<p class="speaker-role">{{ . | safeHTML }}</p>{{ end }}
+      {{ with $s.previously }}<p class="speaker-prev">{{ . }}</p>{{ end }}
+      {{ with $s.credits }}<p class="speaker-credits">{{ delimit . " · " }}</p>{{ end }}
+    </div>
+  </li>
+  {{ else }}
+  {{ errorf "speaker-rows: no speaker %q in data/tpc2026_speakers.yaml" $id }}
+  {{ end }}
+  {{ end }}
+</ul>

@@ -1,0 +1,74 @@
+# TPC 2026 online programme speakers, kept in one place.
+# Referenced by id from the home page (hero, keynote, online_events), the schedule
+# (programme sessions) and the speakers page ({{< speaker-grid >}}).
+#
+#   role        current title and company, shown first
+#   previously  one line of track record
+#   credits     short credibility markers, joined with " · "
+#   photo       square headshot, 320px WebP (WebP sidesteps the repo's LFS rules for png/jpg)
+#
+# Titles were checked against each speaker's LinkedIn headline on 17 Oct 2026; track record
+# comes from the Speaker Profile docs in TPC Documents > Events > Events 2026 >
+# 10 October 2026 -- TPC Virtual > Speaker Profiles, and the keynote announcement post.
+
+hanno-basse:
+  name: "Hanno Basse"
+  url: "https://www.linkedin.com/in/hannobasse/"
+  role: "CTO, SPVCE.ai"
+  previously: "Former CTO of Digital Domain, Stability AI, Microsoft Azure Media & Entertainment and 20th Century Fox"
+  credits: ["SMPTE Fellow", "Motion Picture Academy member", "30 patents"]
+  photo: "/uploads/2026/10/speakers/hanno-basse.webp"
+
+bert-van-brande:
+  name: "Bert Van Brande"
+  url: "https://www.linkedin.com/in/bertvanbrande/"
+  role: "Co-Founder, Stellar Creative Lab"
+  previously: "Designed pipelines at Sony Pictures Imageworks for The Polar Express, Surf's Up and Alice in Wonderland"
+  credits: ["Helped launch the original Maya", "35+ years in CG and VFX"]
+  photo: "/uploads/2026/10/speakers/bert-van-brande.webp"
+
+fermi-perumal:
+  name: "Fermi Perumal"
+  url: "https://www.linkedin.com/in/fermiperumal/"
+  role: "Head of Production Technology, Stellar Creative Lab"
+  previously: "Credits include Spider-Man: Across the Spider-Verse, The Sea Beast and Marvel Zombies"
+  photo: "/uploads/2026/10/speakers/fermi-perumal.webp"
+
+cyrus-rahgoshay:
+  name: "Cyrus Rahgoshay"
+  url: "https://www.linkedin.com/in/cyrusrahgoshay/"
+  role: "Senior Software Development Manager, Autodesk"
+  previously: "Previously Technical Lead at Ubisoft, building its cross-studio USD pipeline"
+  credits: ["DigiPro 2022 speaker"]
+  photo: "/uploads/2026/10/speakers/cyrus-rahgoshay.webp"
+
+dan-englesson:
+  name: "Dan Englesson"
+  url: "https://www.linkedin.com/in/dan-englesson-b07407354/"
+  role: "Founder, Hugin Studios"
+  previously: "Previously Head of Pipeline at Goodbye Kansas, and Global TD at Pixar on The Good Dinosaur, Finding Dory and Coco"
+  credits: ["Part of the team that moved Pixar onto OpenUSD"]
+  photo: "/uploads/2026/10/speakers/dan-englesson.webp"
+
+alan-mcseveney:
+  name: "Alan McSeveney"
+  url: "https://www.linkedin.com/in/alanmcseveney/"
+  role: "Field CTO for Media & Entertainment and AI, WEKA"
+  previously: "Previously co-founder and CTO of Preymaker, and Head of Technology at The Mill"
+  photo: "/uploads/2026/10/speakers/alan-mcseveney.webp"
+
+cole-pearsall:
+  name: "Cole Pearsall"
+  url: "https://www.linkedin.com/in/cole-pearsall/"
+  role: "Founder & CEO, Symbiote"
+  previously: "Building an AI orchestration layer for animation, VFX and games pipelines"
+  credits: ["Forbes 30 Under 30", "Co-founder of Acid League and Proxies"]
+  photo: "/uploads/2026/10/speakers/cole-pearsall.webp"
+
+alex-hughes:
+  name: "Alex Hughes"
+  url: "https://www.linkedin.com/in/thealexhughes/"
+  role: 'Senior Software Engineer, <a href="https://www.miris.com/">Miris</a>'
+  previously: "Previously founding engineer at Arch Platform Technologies and Head of Pipeline at Vitality VFX; Digital Domain and Zoic Studios before that"
+  credits: ["Creator of SEPT, open-source file naming for VFX"]
+  photo: "/uploads/2026/10/speakers/alex-hughes.webp"

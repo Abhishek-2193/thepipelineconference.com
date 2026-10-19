@@ -1,0 +1,13 @@
+{{/* One speaker headshot, or their initials if there is no photo.
+     Pass (dict "s" SPEAKER "class" CSS_CLASS "alt" ALT_TEXT). Leave alt empty when the
+     name is printed right next to the image. */}}
+{{ $s := .s }}
+{{ $class := .class }}
+{{ $alt := default "" .alt }}
+{{ with $s.photo }}
+{{ $src := . | relURL }}
+{{ with resources.Get (strings.TrimPrefix "/" .) }}{{ $src = .RelPermalink }}{{ end }}
+<img class="{{ $class }}" src="{{ $src }}" alt="{{ $alt }}"{{ with $alt }} title="{{ . }}"{{ end }} width="160" height="160" loading="lazy" />
+{{ else }}
+<span class="{{ $class }} speaker-avatar--initials"{{ with $alt }} title="{{ . }}"{{ end }} aria-hidden="true">{{ range split $s.name " " }}{{ substr . 0 1 }}{{ end }}</span>
+{{ end }}

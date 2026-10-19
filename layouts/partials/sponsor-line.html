@@ -1,0 +1,9 @@
+{{/* "Proudly sponsored by <logo>" line. Pass (dict "sponsor" {name, url, logo, text, tagline} "class" CSS_CLASS). */}}
+{{ $sp := .sponsor }}
+{{ $src := $sp.logo | relURL }}
+{{ with resources.Get (strings.TrimPrefix "/" $sp.logo) }}{{ $src = .RelPermalink }}{{ end }}
+<p class="sponsor-line {{ .class }}">
+  <span class="sponsor-line-label">{{ default "Proudly sponsored by" $sp.text }}</span>
+  <a class="sponsor-line-logo" href="{{ $sp.url }}" target="_blank" rel="noopener noreferrer"><img src="{{ $src }}" alt="{{ $sp.name }}" width="200" height="53" /></a>
+  {{ with $sp.tagline }}<span class="sponsor-line-tagline">{{ . }}</span>{{ end }}
+</p>

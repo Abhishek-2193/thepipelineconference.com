@@ -3,45 +3,63 @@ title: "2026 Event Schedule"
 date: 2026-03-18T16:11:40
 author: "Fran"
 
+# Session speakers are ids from data/tpc2026_speakers.yaml (photo, title, track record).
 programme:
   eyebrow: "TPC 2026 · Online · Free to attend"
   heading: "The 2026 online programme"
-  intro: 'Our in-person conference in Vancouver was cancelled. The programme our volunteers built for it is running online instead: two free half-days in October, and the tenth Pipeline Awards in December. Sessions are recorded where permission is given and published on <a href="https://www.youtube.com/@ThePipelineConference">The Pipeline Conference YouTube channel</a>.'
+  intro: 'TPC 2026 moved online from Vancouver, so this year anyone can join from anywhere. The programme our volunteers built runs across two free days in October: Tuesday 20 October, morning and afternoon, with the kickoff of the DPPA Online Speaker Series after The Agentic Pipeline; and Tuesday 27 October. The tenth Pipeline Awards follow in December. Every talk ends in live Q&A, and every session is recorded and published on <a href="https://www.youtube.com/@ThePipelineConference">The Pipeline Conference YouTube channel</a>.'
   days:
-    - eyebrow: "Half-day one"
+    - eyebrow: "Tuesday 20 October · Morning"
       title: "The Agentic Pipeline"
       subtitle: "AI and agentic workflows in digital media pipelines"
       date: "Tuesday 20 October 2026"
       time: "09:00 – 12:00 Pacific Time"
       format: "Online · Free to attend · Recorded"
       accent: "cyan"
+      cta_style: "btn-accent"
       cta_text: "Register free on Luma"
       cta_url: "https://luma.com/9kqv63oh"
       body: "Agents are turning up in production pipelines faster than anyone has written the rules for them. We present three sessions on the work that puts them under pipeline control, from why the prompt is the wrong place for it, to a studio and a games publisher who have built the alternative."
       sessions:
         - tag: "Keynote"
           speakers:
-            - name: "Hanno Basse"
-              url: "https://www.linkedin.com/in/hannobasse/"
+            - id: "hanno-basse"
           abstract: "This keynote deconstructs generative models from the pixel up, exposing why their built-in limitations require us to move control out of the prompt and back into our own pipelines."
         - speakers:
-            - name: "Bert Van Brande"
-              url: "https://www.linkedin.com/in/bertvanbrande/"
-            - name: "Fermi Perumal"
-              url: "https://www.linkedin.com/in/fermiperumal/"
-          org: "Stellar Creative Labs, Vancouver"
-          abstract: "Stellar Creative Labs, a Vancouver-based animation studio, walks through the process and the journey of developing governance, controls and artist-centric AI workflows — embedding generative workflows directly into established creative production pipelines. Together, these applications help artists retain control over asset creation, rights management and model behaviour."
+            - id: "bert-van-brande"
+            - id: "fermi-perumal"
+          abstract: "Stellar Creative Lab, a Vancouver-based animation studio, walks through the process and the journey of developing governance, controls and artist-centric AI workflows — embedding generative workflows directly into established creative production pipelines. Together, these applications help artists retain control over asset creation, rights management and model behaviour."
         - title: "From Brief to Scene: Agentic AI for Asset Production at Ubisoft"
           speakers:
-            - name: "Cyrus Rahgoshay"
-              url: "https://www.linkedin.com/in/cyrusrahgoshay/"
-          org: "Previously at Ubisoft"
+            - id: "cyrus-rahgoshay"
           abstract: "While generative AI often focuses on generating raw media, the biggest production bottlenecks lie in the operational overhead surrounding game and film pipelines. This presentation introduces an agentic AI framework which embeds autonomous agents directly into standard 3D software to translate creative briefs into production-ready scenes. By automating scene assembly, pipeline validation and asset handoffs, the architecture shifts AI from an unpredictable generator into an integrated engine for studio-scale efficiency."
           links:
             - text: "Read the paper"
               url: "https://dl.acm.org/doi/10.1145/3819990.3820033"
 
-    - eyebrow: "Half-day two"
+    - eyebrow: "Tuesday 20 October · Afternoon"
+      title: "Speaker Series Kickoff"
+      subtitle: "The DPPA Online Speaker Series, part of TPC 2026"
+      sponsor:
+        name: "Miris"
+        url: "https://www.miris.com/"
+        logo: "/img/miris-logo.svg"
+      date: "Tuesday 20 October 2026"
+      time: "14:00 – 15:00 Pacific Time"
+      format: "Online · Free to attend · Recorded"
+      accent: "green"
+      cta_style: "btn-accent"
+      cta_text: "Register free on Eventbrite"
+      cta_url: "https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite"
+      body: "Stay on after the morning programme. The afternoon of the 20th kicks off the DPPA Online Speaker Series with Alex Hughes of Miris, on training radiance fields at cloud scale and turning them into 3D assets that stream to any device."
+      sessions:
+        - title: "Large Scale Cloud Native Radiance Field Training for Streamable Assets"
+          speakers:
+            - id: "alex-hughes"
+          abstract: "Alex works on 3D asset streaming at internet scale. His talk covers large scale cloud native radiance field training and what it takes to turn the results into assets that stream — the training infrastructure, the cost model, and the pipeline work in between."
+      footnote: "Part of the TPC 2026 programme on Tuesday 20 October, and the first talk of the DPPA Online Speaker Series, which carries on after TPC. Proudly sponsored by Miris."
+
+    - eyebrow: "Tuesday 27 October · Morning"
       title: "Core Pipeline Services"
       subtitle: "Pipeline engineering and operations at production scale"
       date: "Tuesday 27 October 2026"
@@ -54,39 +72,15 @@ programme:
       sessions:
         - title: "Roadmap & Strategy to Accelerate OpenUSD Adoption within Pipelines"
           speakers:
-            - name: "Dan Englesson"
-              url: "https://www.linkedin.com/in/dan-englesson-b07407354/"
-          org: "Previously Head of Pipeline at Goodbye Kansas, and at Pixar"
+            - id: "dan-englesson"
           abstract: "A structured, four-stage engagement that moves teams from initial evaluation to full production readiness. It opens with focused pipeline discovery and strategic roadmapping, then builds, converts assets and integrates OpenUSD directly into live production workflows. The objective is to leave studios able to independently maintain and scale their own unified 3D pipeline."
         - speakers:
-            - name: "Alan McSeveney"
-              url: "https://www.linkedin.com/in/alanmcseveney/"
-          org: "Previously CTO at Preymaker and Head of Technology at The Mill"
+            - id: "alan-mcseveney"
           abstract: "Alan McSeveney, a veteran technologist, co-founded the entirely cloud-native studio Preymaker and spent over a decade leading technology at The Mill. He shares how unifying studio storage into a single high-performance architecture eliminates data bottlenecks across complex VFX rendering, real-time playback and cloud-bursting pipelines. Drawing on his deep studio background, Alan demonstrates how removing those I/O limits enables production teams to scale traditional visual effects while seamlessly preparing their infrastructure for next-generation generative AI workloads."
         - title: "Introducing Agentic Workflows into Core Pipeline Automation & Governance"
           speakers:
-            - name: "Cole Pearsall"
-              url: "https://www.linkedin.com/in/cole-pearsall/"
-          org: "Founder & CEO at Symbiote"
-          abstract: "Bringing an agentic QC capability to life means shifting from rigid, hardcoded scripts to a secure multi-agent architecture grounded in studio-specific knowledge. By pairing specialised AI agents with lightweight local proxies, studios can run complex DCC checks and scene evaluations directly on artist workstations without exposing proprietary data. The approach automates tedious layout-to-animation handoffs in seconds, delivering clear, evidence-based pass/fail reports, and scales across other pipeline bottlenecks."
-
-    - eyebrow: "October 2026"
-      title: "DPPA Online Speaker Series"
-      subtitle: "Proudly sponsored by Miris"
-      date: "Tuesday 20 October 2026"
-      time: "14:00 Pacific Time"
-      format: "Online · Free to attend · Recorded"
-      accent: "green"
-      cta_text: "Register on Eventbrite"
-      cta_url: "https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite"
-      body: "A one-off talk on the afternoon of our first half-day, and the one session of the three you can already register for."
-      sessions:
-        - title: "Large Scale Cloud Native Radiance Field Training for Streamable Assets"
-          speakers:
-            - name: "Alex Hughes"
-          org: 'Senior Software Engineer at <a href="https://www.miris.com/">Miris</a>, Vancouver, BC'
-          abstract: "Alex works on 3D asset streaming at internet scale. His talk covers large scale cloud native radiance field training and what it takes to turn the results into assets that stream — the training infrastructure, the cost model, and the pipeline work in between."
-      footnote: "The DPPA Online Speaker Series runs alongside the two Pipeline Conference half-days above, but separately from them."
+            - id: "cole-pearsall"
+          abstract: "Cole Pearsall is a Forbes 30 Under 30 serial founder who co-founded and scaled Acid League and Proxies before turning to film and game production. At Symbiote he is building an intelligence layer for animation, VFX and games pipelines: AI orchestration tools, developed with studio partners, that take the friction out of complex production workflows so artists and pipeline teams can work more intuitively. Bringing an agentic QC capability to life means shifting from rigid, hardcoded scripts to a secure multi-agent architecture grounded in studio-specific knowledge. By pairing specialised AI agents with lightweight local proxies, studios can run complex DCC checks and scene evaluations directly on artist workstations without exposing proprietary data. The approach automates tedious layout-to-animation handoffs in seconds, delivering clear, evidence-based pass/fail reports, and scales across other pipeline bottlenecks."
 
     - eyebrow: "December 2026"
       title: "The Pipeline Awards Show"
@@ -100,7 +94,7 @@ programme:
       body: "Our awardees' work on screen, each of them speaking directly to the audience, messages from the judges, and open rooms on Discord afterwards. Nominations are closed and our independent panel has made its decisions."
 ---
 
-Registration for both half-days is open and free — sign up on Luma for [The Agentic Pipeline](https://luma.com/9kqv63oh) and [Core Pipeline Services](https://luma.com/ofvxloqb). [Newsletter](https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv) subscribers hear about everything else first.
+Registration is open and free for all three sessions: [The Agentic Pipeline](https://luma.com/9kqv63oh) and [Core Pipeline Services](https://luma.com/ofvxloqb) on Luma, and the [Speaker Series kickoff](https://www.eventbrite.com/e/large-scale-cloud-native-radiance-field-training-for-streamable-assets-tickets-1994577276326?aff=TPCWebsite) on Eventbrite. [Newsletter](https://newsletter.pipedev.org/forms/nfrm_BzLMaLXv) subscribers hear about everything else first.
 
 ---
 

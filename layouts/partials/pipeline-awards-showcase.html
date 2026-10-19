@@ -19,7 +19,9 @@
                         {{ if $nominee.video_id }}
                         <iframe data-src="https://www.youtube-nocookie.com/embed/{{ $nominee.video_id }}" title="{{ $nominee.title }} video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         {{ else }}
-                        <p class="awards-video-fallback">Video coming soon</p>
+                        <div class="awards-video-fallback">
+                            <p>Video coming soon</p>
+                        </div>
                         {{ end }}
                     </div>
                     <div class="awards-panel-copy">

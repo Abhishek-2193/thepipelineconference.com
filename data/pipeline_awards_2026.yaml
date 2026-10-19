@@ -1,5 +1,5 @@
 # 2026 Pipeline Project of the Year nominees.
-# Replace each video_id when the nomination videos are ready.
+# Omit video_id to show the "Video coming soon" placeholder.
 category: Pipeline Project of the Year
 vote_url: "https://docs.google.com/forms/d/e/1FAIpQLSeC-4NVa2Cj4P91XFWaB-4qGXzRqxisEsLIsA9BsNzzxX5UQg/viewform?usp=dialog"
 nominees:
@@ -8,7 +8,7 @@ nominees:
     contributors: Federico Naum and Fabrice Macagno, Netflix Animation Studios
     image: /images/awards/hybrid-runtime.jpg
     image_alt: Diagram of one host running CY2021 and CY2023 environments in separate containers, with Rez as the shared package layer.
-    video_id: j5uUTW702-U
+    video_id: TsgWVvX5UeY
     writeup: |
       Studios often run several productions at once, each on a different software stack. Shows already underway need a locked environment, while new shows want the latest DCC applications, libraries, and VFX Reference Platform. A Linux upgrade used to mean a long migration, duplicate machines, and a delay before the studio could adopt the new platform.
 
@@ -42,7 +42,7 @@ nominees:
     contributors: Naomi Ken Korem and Mohamed Oumoumad, with Lightricks
     image: /images/awards/lumivid.jpg
     image_alt: LumiVid result of a garage-door plate pulled down in exposure, with cloud detail and headlight structure recovered.
-    video_id: f_xKzSzNwb4
+    video_id: Wa_opHruxLU
     writeup: |
       Generative video models output 8-bit sRGB, which is a dead end in a VFX pipeline: there is no headroom for exposure, grading, or compositing.
 
@@ -66,7 +66,6 @@ nominees:
     contributors: Joe Longson (architecture lead), Jay Steele, Mark Mclaughlin, Andy Lin, Gene Lee, Christian Eisenacher, Serge Sretschinsky, Hidehiro Hirase, Noel Villegas, and Lawrence Chai, Walt Disney Animation Studios
     image: /images/awards/nitro.jpg
     image_alt: A production character rig in a real-time viewport, from Disney Animation’s Nitro playback work.
-    video_id: 4AV5p0Gj9-c
     writeup: |
       Before Nitro, Walt Disney Animation Studios had no single way to preview production assets in real time. Each file format had its own viewer. Most departments were stuck in Maya, which was slow and could not preview procedural scenes, while effects and crowds in Houdini could not be previewed without a full import. Artists often did not see what they were building until a final-frame render that could take hours.
 
@@ -88,7 +87,7 @@ nominees:
     contributors: Benoit Lecocq, Maxime Robinot, Cedric Paille, Vincent Callède, Joachim Guerin, and François Tarlier, Dwarf Animation Studio
     image: /images/awards/twisted.jpg
     image_alt: Painterly hill-village still from Twisted, the DigiPro image for the real-time pipeline paper.
-    video_id: 3Nu7sXc2-Wk
+    video_id: AbCCoULLNfg
     writeup: |
       Offline path-traced rendering took a large farm and about 35 to 60 minutes a frame. Lighting, compositing, and look development stayed cut off from early production, so late creative changes were expensive.
 

@@ -612,7 +612,19 @@ code { font-family: var(--font-mono); }
 .awards-panel-detail { grid-column: 1 / -1; }
 .awards-video { background: #0e1116; border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 16 / 9; }
 .awards-video iframe { width: 100%; height: 100%; border: 0; display: block; }
-.awards-video-fallback { margin: 0; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--color-ink); font-weight: 700; }
+.awards-video-fallback {
+    position: relative; margin: 0; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--color-bg-raise);
+}
+.awards-video-fallback::before {
+    content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px;
+    background: var(--gradient-spectrum);
+}
+.awards-video-fallback p {
+    margin: 0; color: var(--color-ink);
+    font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; letter-spacing: -.01em;
+}
 .awards-panel-copy h3 { margin: 0 0 8px; color: var(--color-ink); font-size: 1.8rem; scroll-margin-top: 140px; }
 .awards-panel-copy h3:focus { outline: none; }
 .awards-contributors {

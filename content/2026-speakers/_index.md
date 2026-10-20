@@ -21,10 +21,9 @@ This keynote deconstructs generative models from the pixel up, exposing why thei
 **[Bert Van Brande](https://www.linkedin.com/in/bertvanbrande/) and [Fermi Perumal](https://www.linkedin.com/in/fermiperumal/) — Stellar Creative Lab, Vancouver**  
 Stellar Creative Lab, a Vancouver-based animation studio, walks through the process and the journey of developing governance, controls and artist-centric AI workflows — embedding generative workflows directly into established creative production pipelines. Together, these applications help artists retain control over asset creation, rights management and model behaviour.
 
-**[Cyrus Rahgoshay](https://www.linkedin.com/in/cyrusrahgoshay/) — Autodesk (previously Ubisoft)**  
+**[Cyrus Rahgoshay](https://www.linkedin.com/in/cyrusrahgoshay/) — Autodesk**  
 *From USD to Agentic AI: Building the Foundations for Intelligent Production*  
-While generative AI often focuses on generating raw media, the biggest production bottlenecks lie in the operational overhead surrounding game and film pipelines. This presentation introduces an agentic AI framework which embeds autonomous agents directly into standard 3D software to translate creative briefs into production-ready scenes. By automating scene assembly, pipeline validation and asset handoffs, the architecture shifts AI from an unpredictable generator into an integrated engine for studio-scale efficiency.  
-[Read the paper](https://dl.acm.org/doi/10.1145/3819990.3820033)
+While generative AI often focuses on generating raw media, the biggest production bottlenecks lie in the operational overhead surrounding game and film pipelines. This presentation introduces an agentic AI framework which embeds autonomous agents directly into standard 3D software to translate creative briefs into production-ready scenes. By automating scene assembly, pipeline validation and asset handoffs, the architecture shifts AI from an unpredictable generator into an integrated engine for studio-scale efficiency.
 
 ### Speaker Series kickoff — Tuesday 20 October, afternoon
 

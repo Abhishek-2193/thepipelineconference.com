@@ -10,12 +10,22 @@ banner_tagline: "To promote, elevate and evolve VFX/CG pipelines"
 #   flag: "Cancelled"
 #   what: "In person · BCIT Vancouver · Thursday 17 September 2026"
 
-event_location: "TPC 2026 · Online · Free"
+event_location: "TPC 2026"
+# Big amber pills next to the edition label: the first thing people should take away.
+event_badges: ["Online", "Free"]
 event_address: "Join live from anywhere"
 event_date: "Tuesday 20 & Tuesday 27 October 2026"
 event_time: "Mornings 09:00 – 12:00 Pacific · Speaker Series kickoff 14:00 Pacific on the 20th"
 
 banner_blurb: "Two free days of talks from people who have built production pipelines at Digital Domain, Stability AI, Pixar, Ubisoft, Sony Pictures Imageworks and The Mill, and on the afternoon of the 20th, the DPPA Online Speaker Series kicks off with Alex Hughes of Miris. Every talk ends in live Q&A, and the tenth Pipeline Awards close out the year in December."
+
+# The hero shows these bullets in place of the blurb (the blurb stays as the meta description).
+# Markdown is allowed: lead with a bold phrase so the list scans.
+banner_points:
+  - "**Two free days of talks** from people who have built production pipelines at Digital Domain, Stability AI, Pixar, Ubisoft, Sony Pictures Imageworks and The Mill"
+  - "**DPPA Online Speaker Series kickoff** with Alex Hughes of Miris, on the afternoon of the 20th"
+  - "**Live Q&A** at the end of every talk"
+  - "**The tenth Pipeline Awards** close out the year in December"
 
 banner_buttons:
   - text: "Register · 20 Oct morning"

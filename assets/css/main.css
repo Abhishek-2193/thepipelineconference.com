@@ -196,6 +196,33 @@ img { max-width: 100%; display: block; }
 .banner-blurb { color: var(--color-body); font-size: 1.05em; line-height: 1.75; margin: 0 auto 26px; max-width: 680px; }
 .site-banner--home .banner-btn-wrap { margin-top: 6px; }
 
+/* Home hero, Oct 2026 (Michael's comms pass): a tagline you can read, "Online" and "Free" impossible
+   to miss, no grey mono on the dark banner, and the pitch as a scannable list. */
+.site-banner--home .banner-lockup { max-width: 900px; }
+.site-banner--home .banner-title { margin: 0 0 10px; }
+.site-banner--home .banner-desc { font-family: var(--font-display); font-weight: 600; font-size: 2em; line-height: 1.2; text-transform: none; letter-spacing: -.005em; color: var(--color-cyan); max-width: none; margin: 0 auto 30px; }
+.banner-headline-row { display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 14px; }
+.site-banner--home .banner-location { font-size: 1.7em; font-weight: 800; letter-spacing: .005em; line-height: 1; }
+.banner-badges { display: inline-flex; gap: 12px; }
+.banner-time-seg { display: inline-block; }
+.banner-badge { display: inline-block; font-family: var(--font-display); font-size: 1.55em; font-weight: 800; line-height: 1; text-transform: uppercase; letter-spacing: .06em; color: var(--color-amber); background: rgba(240, 169, 53, .14); border: 2px solid var(--color-amber); border-radius: 999px; padding: .32em .85em .3em; box-shadow: 0 0 22px rgba(240, 169, 53, .22); }
+.site-banner--home .banner-meta { gap: 10px; margin: 0 0 26px; }
+.site-banner--home .banner-address { font-family: var(--font-display); font-weight: 500; font-size: 1.3em; letter-spacing: .01em; color: var(--color-ink); margin-top: 2px; }
+.site-banner--home .banner-date { font-size: 1.15em; margin-top: 12px; }
+.site-banner--home .banner-time { font-family: var(--font-display); font-weight: 500; font-size: 1.12em; letter-spacing: .01em; color: #e3e8ee; }
+.banner-points { list-style: none; text-align: left; max-width: 720px; margin: 0 auto 30px; padding: 0; }
+.banner-points li { position: relative; padding-left: 1.7em; margin: 0 0 .7em; font-size: 1.08em; line-height: 1.55; color: #d6dde6; }
+.banner-points li:last-child { margin-bottom: 0; }
+.banner-points li::before { content: ""; position: absolute; left: .25em; top: .5em; width: .55em; height: .55em; border-radius: 2px; background: var(--color-cyan); }
+.banner-points li:nth-child(6n+1)::before { background: var(--spectrum-orange); }
+.banner-points li:nth-child(6n+2)::before { background: var(--spectrum-yellow); }
+.banner-points li:nth-child(6n+3)::before { background: var(--spectrum-green); }
+.banner-points li:nth-child(6n+4)::before { background: var(--spectrum-cyan); }
+.banner-points li:nth-child(6n+5)::before { background: var(--spectrum-blue); }
+.banner-points li:nth-child(6n+6)::before { background: var(--spectrum-purple); }
+.banner-points strong { color: var(--color-ink); font-weight: 700; }
+.banner-points a { color: var(--color-cyan); }
+
 /* ---- status notice (cancellation / change of plan) ---- */
 .status-notice { background: #2a1d1d; border-top: 1px solid #7a3b33; border-bottom: 1px solid #7a3b33; }
 .status-notice-inner { max-width: var(--max-width); margin: 0 auto; padding: 22px 24px; display: flex; gap: 18px; align-items: flex-start; }
@@ -439,7 +466,13 @@ code { font-family: var(--font-mono); }
     .navbar-cta { margin: 10px 0 0; text-align: center; }
     .banner-title { font-size: 2.2em; }
     .site-banner--home .banner-title { font-size: 2.3em; }
-    .site-banner--home .banner-desc { font-size: .78em; letter-spacing: .14em; }
+    .site-banner--home .banner-desc { font-size: 1.35em; letter-spacing: 0; margin-bottom: 24px; }
+    .site-banner--home .banner-location { font-size: 1.3em; }
+    .banner-badge { font-size: 1.2em; }
+    .banner-headline-row, .banner-badges { gap: 10px; }
+    .site-banner--home .banner-address { font-size: 1.12em; }
+    .site-banner--home .banner-time { font-size: 1em; }
+    .banner-points li { font-size: 1em; }
     .banner-date { font-size: .95em; }
     .banner-date::before, .banner-date::after { width: 1.4em; }
     .why-attend-grid { grid-template-columns: 1fr; gap: 24px; }

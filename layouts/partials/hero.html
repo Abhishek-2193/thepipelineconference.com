@@ -16,16 +16,27 @@
                 </p>
                 {{ end }}
 
-                {{ if or .Params.event_location .Params.event_address .Params.event_date .Params.event_time }}
+                {{ if or .Params.event_location .Params.event_badges .Params.event_address .Params.event_date .Params.event_time }}
                 <p class="banner-meta">
                     {{ $mapURL := .Params.event_location_url }}
-                    {{ with .Params.event_location }}<span class="banner-location">{{ if $mapURL }}<a href="{{ $mapURL }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>{{ else }}{{ . }}{{ end }}</span>{{ end }}
+                    {{ if or .Params.event_location .Params.event_badges }}
+                    <span class="banner-headline-row">
+                        {{ with .Params.event_location }}<span class="banner-location">{{ if $mapURL }}<a href="{{ $mapURL }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>{{ else }}{{ . }}{{ end }}</span>{{ end }}
+                        {{ with .Params.event_badges }}<span class="banner-badges">{{ range . }}<span class="banner-badge">{{ . }}</span>{{ end }}</span>{{ end }}
+                    </span>
+                    {{ end }}
                     {{ with .Params.event_address }}<span class="banner-address">{{ . }}</span>{{ end }}
                     {{ with .Params.event_date }}<span class="banner-date">{{ . }}</span>{{ end }}
-                    {{ with .Params.event_time }}<span class="banner-time">{{ . }}</span>{{ end }}
+                    {{ with .Params.event_time }}<span class="banner-time">{{ range $i, $seg := split . " · " }}{{ if $i }} · {{ end }}<span class="banner-time-seg">{{ $seg }}</span>{{ end }}</span>{{ end }}
                 </p>
                 {{ end }}
+                {{ with .Params.banner_points }}
+                <ul class="banner-points">
+                    {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+                </ul>
+                {{ else }}
                 {{ with .Params.banner_blurb }}<p class="banner-blurb">{{ . }}</p>{{ end }}
+                {{ end }}
                 <div class="banner-btn-wrap">
                     {{ range .Params.banner_buttons }}
                     <a class="btn {{ default "btn-accent" .style }}" href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .text }}</a>

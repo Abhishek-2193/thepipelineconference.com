@@ -19,7 +19,7 @@ programme:
       cta_style: "btn-accent"
       cta_text: "Register free on Luma"
       cta_url: "https://luma.com/9kqv63oh"
-      body: "Agents are turning up in production pipelines faster than anyone has written the rules for them. We present three sessions on the work that puts them under pipeline control, from why the prompt is the wrong place for it, to a studio and a games publisher who have built the alternative."
+      body: "Agents are turning up in production pipelines faster than anyone has written the rules for them. We present three sessions on the work that puts them under pipeline control, from why the prompt is the wrong place for it, to a studio and a production-technology team who have built the alternative."
       sessions:
         - tag: "Keynote"
           speakers:
@@ -33,9 +33,6 @@ programme:
           speakers:
             - id: "cyrus-rahgoshay"
           abstract: "While generative AI often focuses on generating raw media, the biggest production bottlenecks lie in the operational overhead surrounding game and film pipelines. This presentation introduces an agentic AI framework which embeds autonomous agents directly into standard 3D software to translate creative briefs into production-ready scenes. By automating scene assembly, pipeline validation and asset handoffs, the architecture shifts AI from an unpredictable generator into an integrated engine for studio-scale efficiency."
-          links:
-            - text: "Read the paper"
-              url: "https://dl.acm.org/doi/10.1145/3819990.3820033"
 
     - eyebrow: "Tuesday 20 October · Afternoon"
       title: "Speaker Series Kickoff"
